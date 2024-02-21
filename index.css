@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-
+    font-family: Lato;
 }
 
 .lato_heavy {
@@ -85,14 +85,15 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    margin-bottom: 50px; /* Adjust margin to create space for the button */
+    margin-bottom: 50px;
+    /* Adjust margin to create space for the button */
     z-index: -100;
 }
 
 .card {
     width: 336px;
     height: 300px;
-    background: #FBFCFF 0% 0% no-repeat padding-box;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
     border-radius: 10px;
     overflow: hidden;
     position: relative;
@@ -110,7 +111,8 @@
 
 .btn-container {
     position: absolute;
-    bottom: -35px; /* Adjust to position the button slightly above the bottom */
+    bottom: -35px;
+    /* Adjust to position the button slightly above the bottom */
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
@@ -128,8 +130,94 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
     z-index: 200;
+    font-family: Lato;
+    font-weight: 700;
 }
 
 .btn:hover {
     background-color: #0056b3;
+}
+
+
+.triangle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.triangle {
+    position: absolute;
+    /* Position triangle absolutely */
+    top: 0;
+    left: 50;
+    width: 0;
+    height: 0;
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+    border-top: 400px solid #1388E542;
+}
+
+.triangle-content {
+    position: relative;
+    z-index: 1;
+    /* display: flex;
+    justify-content: space-around;
+    align-items: center; */
+}
+
+.triangle-content>div>div {
+    text-align: center;
+    padding: 20px;
+    font-family: Lato;
+    font-style: italic;
+    font-weight: 700;
+    /* font-size: 25px; */
+}
+
+.triangle-content>div>div>img {
+    height: auto;
+}
+
+.tabs {
+    display: flex;
+    align-items: center;
+}
+
+.tab {
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-right: 20px;
+    transition: all 0.011s ease;
+    font-size: 20px;
+}
+
+.tab.selected {
+    border-bottom: 2px solid #707070;
+}
+
+/* .feature-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 50px;
+} */
+
+.f-card {
+    width: 336px;
+    height: 350px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    overflow: hidden;
+    /* position: relative; */
+    box-shadow: 0px 3px 6px #00000029;
+    z-index: -10;
+}
+.f-card img {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: auto;
+    margin-top: 50px;
 }
