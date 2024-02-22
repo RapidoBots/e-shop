@@ -143,7 +143,9 @@
             <div class="card">
               <img src="/Assets/images/card1.png" alt="Image" />
               <div class="btn-container">
-                <button class="btn">Tees</button>
+                <div style="position: relative">
+                  <button class="btn">Tees</button>
+                </div>
               </div>
             </div>
             <div class="card">
@@ -540,24 +542,40 @@
       </div>
       <!-- Discounted sales -->
       <div style="max-width: 1000px; margin: 0 auto">
-        <!-- <div
-            style="
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              gap: 20px;
-            "
-            class="lato_heavy"
-          >
-            <h1 style="color: #1388e5">DISCOUNTED</h1>
-            <h1 style="color: black">SALE'S</h1>
-          </div> -->
+        <div
+          style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+          "
+          class="lato_heavy"
+        >
+          <h1 style="color: #1388e5">DISCOUNTED</h1>
+          <h1 style="color: black">SALE'S</h1>
+        </div>
         <div>
-          <img
-            style="width: 100%; height: auto"
-            src="/Assets/images/discount.png"
-            alt=""
-          />
+          <div>
+            <div class="banner-grid-container">
+              <img
+                src="/Assets/images/LG.png"
+                alt=""
+                style="width: 100%; height: auto;grid-column: span 5;"
+              />
+              <img
+                src="/Assets/images/cute-college-apparel-1533568750.png"
+                alt=""
+                style="width: 100%; height: auto;grid-column: span 7;"
+              />
+            </div>
+            <div>
+              <img
+                src="/Assets/images/istockphoto-1300125969-170667a.png"
+                alt=""
+                style="width: 100%; height: auto"
+              />
+            </div>
+          </div>
         </div>
       </div>
       <!-- PRODUCTS IN TODAY -->
@@ -572,7 +590,7 @@
           class="lato_heavy"
         >
           <h1 style="color: #1388e5">PRODUCTS</h1>
-          <h1 style="color: black">SALE'S</h1>
+          <h1 style="color: black">IN TODAY</h1>
         </div>
         <div>
           <!-- slider -->
@@ -600,7 +618,8 @@
           />
         </div>
       </div>
-      <div style="background-color: #e6f4ff; height: 500px">
+      <!-- about us -->
+      <div style="background-color: #e6f4ff; height: 500px; padding-top: 50px">
         <div
           style="display: flex; justify-content: center; align-items: center"
         >
@@ -627,8 +646,150 @@
             </div>
           </div>
         </div>
+        <div style="margin-top: 100px">
+          <div style="max-width: 1100px; margin: 0 auto">
+            <div style="position: relative">
+              <div
+                style="
+                  background: linear-gradient(
+                    to bottom right,
+                    #085fa7,
+                    #1388e5
+                  );
+                  padding: 30px 100px;
+                  z-index: 200;
+                "
+              >
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 50px;
+                    z-index: 100;
+                  "
+                >
+                  <div style="display: flex; align-items: center; gap: 30px">
+                    <img
+                      src="/Assets/images/Layer_4.png"
+                      alt=""
+                      style="width: 90px; height: 70px"
+                    />
+                    <p style="color: #ffffff">
+                      Subscribe to our newsletter and receive exclusive offers
+                      every week
+                    </p>
+                  </div>
+                  <div style="display: flex; gap: 10px">
+                    <input
+                      type="text"
+                      class="email-input"
+                      placeholder="Enter your email"
+                    />
+                    <button
+                      class="search-button"
+                      style="background-color: #363434; font-size: 13px"
+                    >
+                      Search
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+      <div style="background-color: #363434; padding: 10px">
+        <div
+          style="
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* flex-direction: column; */
+            z-index: 0;
+          "
+        >
+          <div style="max-width: 1000px; margin: 0 auto">
+            <div
+              style="
+                display: grid;
+                grid-template-columns: repeat(6, 1fr) repeat(6, 1fr);
+                grid-gap: 10px;
+                z-index: 1;
+              "
+            >
+              <div style="grid-column: span 6; max-width: 450px">
+                <img src="/Assets/images/LogoWhite.png" alt="" />
+                <p style="color: #ffffff">
+                  High quality Scandinavian furniture made from eco-friendly
+                  materials. Designed for modern, minimalist apartments
+                </p>
+                <div
+                  style="
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    gap: 10px;
+                  "
+                >
+                  <img src="/Assets/images/facebook.png" alt="" />
+                  <img src="/Assets/images/twitter.png" alt="" />
+                  <img src="/Assets/images/linkedin (1).png" alt="" />
+                  <img src="/Assets/images/instagram.png" alt="" />
+                  <img src="/Assets/images/youtube (1).png" alt="" />
+                </div>
+              </div>
+              <div
+                style="
+                  grid-column: span 6;
+                  display: flex;
+                  justify-content: space-between;
+                  gap: 50px;
+                "
+              >
+                <div>
+                  <p style="color: #ffffff">Shopping online</p>
+                  <div style="color: #aeaeae">
+                    <p>Order Status</p>
+                    <p>Shipping and Delivery</p>
+                    <p>Returns</p>
+                    <p>Payment Options</p>
+                    <p>Contact Us</p>
+                  </div>
+                </div>
+                <div>
+                  <p style="color: #ffffff">Information</p>
+                  <div style="color: #aeaeae">
+                    <p>Gift Cards</p>
+                    <p>Find a store</p>
+                    <p>Newsletter</p>
+                    <p>Bacome a member</p>
+                    <p>Site feedback</p>
+                  </div>
+                </div>
+                <div>
+                  <p style="color: #ffffff">Contact</p>
+                  <div style="color: #aeaeae">
+                    <p>store@uikit.com</p>
+                    <p>Hotline: +1 131 138 138</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <hr style="border-color: #aeaeae" class="solid" />
+          <p style="color: #aeaeae; text-align: center">
+            © 2022. ALL RIGHTS RESERVED.
+          </p>
+          <hr style="border-color: #aeaeae" class="solid" />
+        </div>
       </div>
     </div>
+
     <!-- Include the JavaScript file -->
     <script src="/JavaScript/index.js"></script>
   </body>
