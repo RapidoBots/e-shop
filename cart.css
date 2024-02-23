@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+    font-family: Lato;
+}
+
+.number-input {
+    border: 1px solid #D2D2D2;
+    outline: none;
+    padding: 5px;
+    font-size: 16px;
+    width: 90px;
+    height: 40px;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.remove-button {
+    color: #D2D2D2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    /* text-align: center; */
+    /* width: 90px; */
+    /* border-bottom: 1px solid #D2D2D2; */
+}
+
+.custom-select {
+    appearance: none;
+    background-color: white;
+    border: none;
+    padding: 10px 20px ;
+    font-size: 16px;
+    color: black;
+    width: 100%;
+}
+
+.custom-select::after {
+    content: '\25BC';
+    /* Unicode character for arrow */
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    /* Adjust as needed */
+    transform: translateY(-50%);
+    pointer-events: none;
+    /* Ensure arrow doesn't interfere with clicking */
+}
+
+.custom-select:focus {
+    outline: none;
+    /* Remove outline on focus */
+}
+
+.checkout-button {
+    background-color: #1388E5; /* Set background color */
+    color: white; /* Set text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Apply border radius */
+    padding: 10px 20px; /* Adjust padding as needed */
+    cursor: pointer; /* Show pointer cursor on hover */
+    width: 100%;
+  }
+  
+  .checkout-button:hover {
+    background-color: #0e6bbf; /* Darken background color on hover */
+  }
