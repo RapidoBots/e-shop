@@ -25,3 +25,19 @@ togglePassword.addEventListener("click", function () {
     togglePassword.classList.add("fa-eye");
   }
 });
+
+
+function selectTab(tabIndex) {
+  const tabs = document.querySelectorAll('.tab');
+  const tabContents = document.querySelectorAll('.tabContent');
+
+  tabs.forEach((tab, index) => {
+    if (index === tabIndex) {
+      tab.classList.add('selected');
+      tabContents[index].classList.add('selected');
+    } else {
+      tab.classList.remove('selected');
+      tabContents[index].classList.remove('selected');
+    }
+  });
+}
