@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cart</title>
-    <link rel="stylesheet" href="./cart.css" />
+    <title>Product</title>
+    <link rel="stylesheet" href="./Product.css" />
     <link rel="stylesheet" href="./utils.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
@@ -15,6 +15,13 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
   </head>
   <body
@@ -62,8 +69,8 @@
           <div
             style="
               /* display: flex;
-              justify-content: space-between;
-              align-items: center; */
+                  justify-content: space-between;
+                  align-items: center; */
               padding: 10px 0px;
               display: grid;
               grid-template-columns: repeat(12, 1fr);
@@ -118,199 +125,62 @@
           </div>
         </div>
       </div>
-      <!-- Shopping Cart -->
-      <div style="margin-bottom: 100px;padding: 50px 0px 80px 0px; ">
-        <div style="max-width: 1300px; margin: 0 auto">
-          <div style="display: flex; gap: 20px">
-            <div style="flex-basis: 70%">
-              <p style="font-size: 40px; margin: 0px; padding-bottom: 20px">
-                Shopping Cart
+      <!-- Product Description -->
+      <div style="padding: 50px 0px 100px">
+        <p style="text-align: center">Home / Electronics</p>
+        <div style="display: flex; box-shadow: 0px 3px 6px #00000029">
+          <div style="background-color: #eff8ff; flex-basis: 50%">
+            <img src="/Assets/images/headphone.png" alt="" />
+          </div>
+          <div style="flex-basis: 50%">
+            <div style="padding-left: 40px">
+              <p style="font-size: 45px; color: #000000; font-weight: 800">
+                Beats Solo Pro Wireless
               </p>
-              <div
-                style="
-                  border-top: 1px solid #aeaeae;
-                  border-bottom: 1px solid #aeaeae;
-                  display: flex;
-                  font-size: 18px;
-                  padding: 20px 0px;
-                "
-              >
-                <div style="flex-basis: 55%;text-align: left;">PRODUCT DETAILS</div>
-                <div style="flex-basis: 15%;text-align: center;">QUANTITY</div>
-                <div style="flex-basis: 15%;text-align: center;">PRICE</div>
-                <div style="flex-basis: 15%;text-align: center;">TOTAL</div>
-              </div>
-              <div
-                style="
-                  display: flex;
-                  font-size: 18px;
-                  padding: 20px 0px;
-                  border-bottom: 1px solid #aeaeae;
-                  gap: 20px;
-                "
-              >
-                <div
-                  style="
-                    flex-basis: 55%;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                  "
-                >
+              <p style="font-size: 45px; color: #1388e5; font-weight: 800">
+                $665.95
+              </p>
+              <p>
+                Audio Sharing is compatible with Beats Flex, Solo Pro,
+                Powerbeats Pro, Powerbeats, Solo3 Wireless, Powerbeats3
+                Wireless, Beats Studio3 Wireless, BeatsX, AirPods (1st
+                generation or later), and AirPods Pro. Works with iPhone 8 or
+                later and iPod touch (7th generation)
+              </p>
+              <div>
+                <p>Color</p>
+                <div style="display: flex; gap: 10px">
                   <div
-                    style="
-                      display: flex;
-                      align-items: flex-start;
-                      justify-content: flex-start;
-                    "
-                  >
-                    <img
-                      style="height: auto; width: 100%"
-                      src="/Assets//images/headphone.png"
-                      alt=""
-                    />
-                  </div>
-                  <div>
-                    <p style="font-weight: 600; color: #363434;">
-                      BEATS Solo Pro wireless headphones
-                    </p>
-                    <p style="color: #d2d2d2;">
-                      Color:
-                      <span style="font-weight: 600; color: #363434"
-                        >BLACK</span
-                      >
-                    </p>
-                    <p style="color: #d2d2d2;">
-                      Size:
-                      <span style="font-weight: 600; color: #363434"
-                        >LARGE</span
-                      >
-                    </p>
-                    <p style="color: #d2d2d2;">
-                      Product Code:
-                      <span style="font-weight: 600; color: #363434"
-                        >187548</span
-                      >
-                    </p>
-                  </div>
-                </div>
-                <div
-                  style="
-                    flex-basis: 15%;
-                    display: flex;
-                    align-items: center;
-                    flex-direction: column;
-                    justify-content: center;
-                  "
-                >
-                  <input type="number" class="number-input" placeholder="0" />
-                  <a href="#" class="remove-button" style="margin-top: 10px;">Remove</a>
-                </div>
-                <div
-                  style="
-                    flex-basis: 15%;
-                    color: #1388e5;
-                    display: flex;
-                    align-items: center;
-                    flex-direction: column;
-                    justify-content: center;
-                  "
-                >
-                  $665.25
-                </div>
-                <div
-                  style="
-                    flex-basis: 15%;
-                    display: flex;
-                    align-items: center;
-                    flex-direction: column;
-                    justify-content: center;
-                  "
-                >
-                  <p style="color: #1388e5">$665.25</p>
-                  <div style="margin-top: 50px;">
-                    <a href="#" class="remove-button" style="display: block;text-align: center;margin-bottom: 10px;">EDIT</a>
-                    <a href="#" class="remove-button">SAVE FOR LATER</a>
-                  </div>
+                    class="color-circle"
+                    style="background-color: #363434"
+                  ></div>
+                  <div
+                    style="background-color: #e85252"
+                    class="color-circle"
+                  ></div>
+                  <div
+                    style="background-color: #f6e3ed"
+                    class="color-circle"
+                  ></div>
                 </div>
               </div>
               <div>
-                <p class="remove-button">CONTINUE SHOPPING</p>
+                <p>Size</p>
+                <div style="display: flex; gap: 10px; text-align: center">
+                  <div class="size-box">S</div>
+                  <div class="size-box">M</div>
+                  <div class="size-box">L</div>
+                  <div class="size-box">XL</div>
+                </div>
               </div>
-            </div>
-            <div
-              style="
-                flex-basis: 30%;
-                align-self: stretch;
-                background: #eeeeee 0% 0% no-repeat padding-box;
-              "
-            >
-              <div
-                style="
-                  /* background: #eeeeee 0% 0% no-repeat padding-box; */
-                  padding: 40px 30px;
-                  font-weight: 700;
-                "
-              >
-                <p>ORDER SUMMARY</p>
-                <hr
-                  style="margin-bottom: 30px; border-color: #707070"
-                  class="solid"
-                />
-                <div
-                  style="
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    padding: 0px;
-                    margin: 0px;
-                  "
+              <div style="display: flex; gap: 10px; align-items: center">
+                <input type="number" class="number-input"  placeholder="0" />
+                <button
+                  class="checkout-button"
+                  style="width: auto; padding: 20px 50px"
                 >
-                  <p>ITEMS 1</p>
-                  <p>$665.25</p>
-                </div>
-                <p style="margin: 0px; margin-bottom: 20px; padding: 0px">
-                  SHIPPING
-                </p>
-                <div>
-                  <select
-                    class="custom-select"
-                    style="color: #363434; font-weight: 700"
-                  >
-                    <option value="option1">Standard Delivery - $4.00</option>
-                    <option value="option2">Standard Delivery - $6.00</option>
-                    <option value="option3">Standard Delivery - $8.00</option>
-                  </select>
-                </div>
-                <hr
-                  style="margin: 40px 0px; border-color: #707070"
-                  class="solid"
-                />
-                <div
-                  style="
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    margin: 0px;
-                    padding: 0px;
-                  "
-                >
-                  <p style="margin: 0px; padding: 0px">TOTAL COST</p>
-                  <p style="margin: 0px; padding: 0px">$665.25</p>
-                </div>
-                <div style="margin: 20px 0px">
-                  <button class="checkout-button">CHECKOUT</button>
-                </div>
-                <div
-                  style="
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                  "
-                >
-                  <p>PROMOTIONAL CODE</p>
-                  <p>+</p>
-                </div>
+                  ADD TO CART
+                </button>
               </div>
             </div>
           </div>
