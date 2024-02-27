@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box
+}
+
+.grid-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    cursor: pointer;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+}
+
+.row i {
+    font-size: 5px;
+}
+
+
+/*  */
+

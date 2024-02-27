@@ -19,16 +19,13 @@
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    /* text-align: center; */
-    /* width: 90px; */
-    /* border-bottom: 1px solid #D2D2D2; */
 }
 
 .custom-select {
     appearance: none;
     background-color: white;
     border: none;
-    padding: 10px 20px ;
+    padding: 10px 20px;
     font-size: 16px;
     color: black;
     width: 100%;
@@ -36,22 +33,17 @@
 
 .custom-select::after {
     content: '\25BC';
-    /* Unicode character for arrow */
     position: absolute;
     top: 50%;
     right: 10px;
-    /* Adjust as needed */
     transform: translateY(-50%);
     pointer-events: none;
-    /* Ensure arrow doesn't interfere with clicking */
 }
 
 .custom-select:focus {
     outline: none;
-    /* Remove outline on focus */
 }
 
-  
-  .checkout-button:hover {
-    background-color: #0e6bbf; /* Darken background color on hover */
-  }
+.checkout-button:hover {
+    background-color: #0e6bbf;
+}

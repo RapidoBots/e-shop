@@ -1,12 +1,24 @@
 // function for tab change in home page
-function selectTab(index) {
-  // Remove 'selected' class from all tabs
-  let tabs = document.querySelectorAll(".tab");
-  console.log(tabs, "tabs");
+function selectTab(index,value) {
+  const tabs = document.querySelectorAll(".tab");
+  const description = document.getElementById("description");
+  const review = document.getElementById("review");
   tabs.forEach((tab) => tab.classList.remove("selected"));
-
-  // Add 'selected' class to the clicked tab
   tabs[index].classList.add("selected");
+
+  if(value==="new") {
+    description.style.transform = "translateX(0px)";
+    review.style.transform = "translateX(0px)";
+  }
+  else if(value==="feature") {
+    description.style.transform = "translateX(1200px)";
+    review.style.transform = "translateX(1200px)";
+  }
+  {
+    description.style.transform = "translateX(1200px)";
+    review.style.transform = "translateX(1200px)";
+  }
+
 }
 
 // Function for password toggle in account page
@@ -26,18 +38,5 @@ togglePassword.addEventListener("click", function () {
   }
 });
 
+// for product tabs
 
-function selectTab(tabIndex) {
-  const tabs = document.querySelectorAll('.tab');
-  const tabContents = document.querySelectorAll('.tabContent');
-
-  tabs.forEach((tab, index) => {
-    if (index === tabIndex) {
-      tab.classList.add('selected');
-      tabContents[index].classList.add('selected');
-    } else {
-      tab.classList.remove('selected');
-      tabContents[index].classList.remove('selected');
-    }
-  });
-}

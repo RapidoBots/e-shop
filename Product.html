@@ -130,7 +130,26 @@
         <p style="text-align: center">Home / Electronics</p>
         <div style="display: flex; box-shadow: 0px 3px 6px #00000029">
           <div style="background-color: #eff8ff; flex-basis: 50%">
-            <img src="/Assets/images/headphone.png" alt="" />
+            <div class="product-gallery">
+              <div class="image-thumb">
+                <img
+                  src="/Assets/images/headphone.png"
+                  onmouseover="updateImage(this)"
+                  class="active"
+                />
+                <img
+                  src="/Assets/images/headphone2.png"
+                  onmouseover="updateImage(this)"
+                />
+                <img
+                  src="/Assets/images/headphone3.png"
+                  onmouseover="updateImage(this)"
+                />
+              </div>
+              <div class="image-viewer">
+                <img src="/Assets/images/headphone.png" />
+              </div>
+            </div>
           </div>
           <div style="flex-basis: 50%">
             <div style="padding-left: 40px">
@@ -244,174 +263,222 @@
         </div>
       </div>
       <!-- Tabs -->
-      <div style="padding-bottom: 100px">
-        <div style="display: flex; justify-content: center">
-          <div class="tabs">
-            <div class="tab selected" onclick="selectTab(0)">DESCRIPTION</div>
-            <div class="tab" onclick="selectTab(1)">REVIEWS</div>
-          </div>
-        </div>
-        <!-- <div style="max-width: 900px; margin: 0 auto">
-          <div
-            style="display: flex; justify-content: center; align-items: center"
-          >
-            <div style="padding: 40px 0px">
-              <div style="display: flex; align-items: center; gap: 40px">
-                <img src="/Assets/images/b.png" alt="" />
-                <p>
-                  BEATS STUDIO 3 WIRELESS HEADPHONE price n is updated on daily
-                  basis and rate/price for BEATS STUDIO 3 WIRELESS HEADPHONE is
-                  valid for all cities of etc. BEATS STUDIO 3 WIRELESS
-                </p>
+      <div style="display: flex; justify-content: center; align-items: center">
+        <div
+          style="
+            padding-bottom: 100px;
+            position: relative;
+            overflow: hidden;
+            width: 900px;
+            height: 900px;
+            padding: 0px 20px;
+          "
+        >
+          <div style="display: flex; justify-content: center">
+            <div class="tabs">
+              <div class="tab selected" onclick="Description(0,'description')">
+                DESCRIPTION
               </div>
-              <p>
-                Disclaimer : BEATS STUDIO 3 WIRELESS HEADPHONE price n is
-                updated on daily basis and rate/price for BEATS STUDIO 3
-                WIRELESS
-              </p>
-              <p>
-                HEADPHONE is valid for all cities of etc. BEATS STUDIO 3
-                WIRELESS HEADPHONE price depends on many factors thats include
-                the price of dollors, manufacturar price and import cost and
-                duties etc. Our team entered specs from diffrent resources and
-                not responsible for any typo error in specs for
-              </p>
-              <p>
-                BEATS STUDIO 3 WIRELESS HEADPHONE, please report any such error
-                in bug report panel for BEATS STUDI O 3 WIRELESS HEADPHONE.
-                BEATS STUDIO 3 WIRELESS HEADPHONE price in.
-              </p>
+              <div class="tab" onclick="Review(1,'review')">REVIEWS</div>
             </div>
           </div>
-        </div> -->
-        <div style="max-width: 1100px; margin: 0 auto">
           <div
             style="
-              display: flex;
-              align-items: center;
-              justify-content: space-between;
+              position: absolute;
+              top: 130px;
+              max-width: 1100px;
+              transition: transform 1s;
+              height: 700px;
             "
+            id="description"
           >
-            <div style="flex-basis: 40%">
-              <p style="font-size: 18px; font-weight: 600">REVIEWS</p>
-              <div>
-                <p style="font-size: 18px; font-weight: 600">
-                  There are (328 reviews)
-                </p>
-                <div style="display: flex; flex-direction: column; gap: 10px">
-                  <div
-                    style="
-                      background: #ffffff 0% 0% no-repeat padding-box;
-                      box-shadow: 0px 3px 6px #00000029;
-                      border-radius: 10px;
-                      border: 1px solid #d2d2d2;
-                      padding: 5px 10px;
-                    "
-                  >
-                    <p>Cory</p>
-                    <div>
-                      <i class="fas fa-star star" style="color: #ffd60c"></i>
-                      <i class="fas fa-star star" style="color: #ffd60c"></i>
-                      <i class="fas fa-star star" style="color: #ffd60c"></i>
-                      <i class="fas fa-star star" style="color: #ffd60c"></i>
-                      <i class="fas fa-star star" style="color: #ffd60c"></i>
-                    </div>
-                    <p>Audio Sharing is compatible with Beats Flex, Solo Pro</p>
-                  </div>
-                  <div
-                    style="
-                      background: #ffffff 0% 0% no-repeat padding-box;
-                      box-shadow: 0px 3px 6px #00000029;
-                      border-radius: 10px;
-                      border: 1px solid #d2d2d2;
-                      padding: 5px 10px;
-                    "
-                  >
-                    <p>Cory</p>
-                    <div>
-                      <i class="fas fa-star star" style="color: #ffd60c"></i>
-                      <i class="fas fa-star star" style="color: #ffd60c"></i>
-                      <i class="fas fa-star star" style="color: #ffd60c"></i>
-                      <i class="fas fa-star star" style="color: #ffd60c"></i>
-                      <i class="fas fa-star star" style="color: #ffd60c"></i>
-                    </div>
-                    <p>Audio Sharing is compatible with Beats Flex, Solo Pro</p>
-                  </div>
-                  <div
-                    style="
-                      background: #ffffff 0% 0% no-repeat padding-box;
-                      box-shadow: 0px 3px 6px #00000029;
-                      border-radius: 10px;
-                      border: 1px solid #d2d2d2;
-                      padding: 5px 10px;
-                    "
-                  >
-                    <p>Cory</p>
-                    <div>
-                      <i class="fas fa-star star" style="color: #ffd60c"></i>
-                      <i class="fas fa-star star" style="color: #ffd60c"></i>
-                      <i class="fas fa-star star" style="color: #ffd60c"></i>
-                      <i class="fas fa-star star" style="color: #ffd60c"></i>
-                      <i class="fas fa-star star" style="color: #ffd60c"></i>
-                    </div>
-                    <p>Audio Sharing is compatible with Beats Flex, Solo Pro</p>
-                  </div>
+            <div
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              <div style="padding: 40px 0px">
+                <div style="display: flex; align-items: center; gap: 40px">
+                  <img src="/Assets/images/b.png" alt="" />
+                  <p>
+                    BEATS STUDIO 3 WIRELESS HEADPHONE price n is updated on
+                    daily basis and rate/price for BEATS STUDIO 3 WIRELESS
+                    HEADPHONE is valid for all cities of etc. BEATS STUDIO 3
+                    WIRELESS
+                  </p>
                 </div>
+                <p>
+                  Disclaimer : BEATS STUDIO 3 WIRELESS HEADPHONE price n is
+                  updated on daily basis and rate/price for BEATS STUDIO 3
+                  WIRELESS
+                </p>
+                <p>
+                  HEADPHONE is valid for all cities of etc. BEATS STUDIO 3
+                  WIRELESS HEADPHONE price depends on many factors thats include
+                  the price of dollors, manufacturar price and import cost and
+                  duties etc. Our team entered specs from diffrent resources and
+                  not responsible for any typo error in specs for
+                </p>
+                <p>
+                  BEATS STUDIO 3 WIRELESS HEADPHONE, please report any such
+                  error in bug report panel for BEATS STUDI O 3 WIRELESS
+                  HEADPHONE. BEATS STUDIO 3 WIRELESS HEADPHONE price in.
+                </p>
               </div>
             </div>
-            <div style="flex-basis: 40%">
-              <p style="font-size: 18px; font-weight: 700">Give Review</p>
-              <p style="font-size: 18px; font-weight: 700">
-                Your email address will not be published. Required fields are
-                marked *
-              </p>
-              <div style="display: flex; align-items: center; gap: 20px">
+          </div>
+          <div
+            style="
+              position: absolute;
+              top: 130px;
+              max-width: 900px;
+              transition: transform 1s;
+              height: 900px;
+            "
+            id="review"
+          >
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+              "
+            >
+              <div style="flex-basis: 40%">
+                <p style="font-size: 18px; font-weight: 600">REVIEWS</p>
+                <div>
+                  <p style="font-size: 18px; font-weight: 600">
+                    There are (328 reviews)
+                  </p>
+                  <div style="display: flex; flex-direction: column; gap: 10px">
+                    <div
+                      style="
+                        background: #ffffff 0% 0% no-repeat padding-box;
+                        box-shadow: 0px 3px 6px #00000029;
+                        border-radius: 10px;
+                        border: 1px solid #d2d2d2;
+                        padding: 5px 10px;
+                      "
+                    >
+                      <p>Cory</p>
+                      <div>
+                        <i class="fas fa-star star" style="color: #ffd60c"></i>
+                        <i class="fas fa-star star" style="color: #ffd60c"></i>
+                        <i class="fas fa-star star" style="color: #ffd60c"></i>
+                        <i class="fas fa-star star" style="color: #ffd60c"></i>
+                        <i class="fas fa-star star" style="color: #ffd60c"></i>
+                      </div>
+                      <p>
+                        Audio Sharing is compatible with Beats Flex, Solo Pro
+                      </p>
+                    </div>
+                    <div
+                      style="
+                        background: #ffffff 0% 0% no-repeat padding-box;
+                        box-shadow: 0px 3px 6px #00000029;
+                        border-radius: 10px;
+                        border: 1px solid #d2d2d2;
+                        padding: 5px 10px;
+                      "
+                    >
+                      <p>Cory</p>
+                      <div>
+                        <i class="fas fa-star star" style="color: #ffd60c"></i>
+                        <i class="fas fa-star star" style="color: #ffd60c"></i>
+                        <i class="fas fa-star star" style="color: #ffd60c"></i>
+                        <i class="fas fa-star star" style="color: #ffd60c"></i>
+                        <i class="fas fa-star star" style="color: #ffd60c"></i>
+                      </div>
+                      <p>
+                        Audio Sharing is compatible with Beats Flex, Solo Pro
+                      </p>
+                    </div>
+                    <div
+                      style="
+                        background: #ffffff 0% 0% no-repeat padding-box;
+                        box-shadow: 0px 3px 6px #00000029;
+                        border-radius: 10px;
+                        border: 1px solid #d2d2d2;
+                        padding: 5px 10px;
+                      "
+                    >
+                      <p>Cory</p>
+                      <div>
+                        <i class="fas fa-star star" style="color: #ffd60c"></i>
+                        <i class="fas fa-star star" style="color: #ffd60c"></i>
+                        <i class="fas fa-star star" style="color: #ffd60c"></i>
+                        <i class="fas fa-star star" style="color: #ffd60c"></i>
+                        <i class="fas fa-star star" style="color: #ffd60c"></i>
+                      </div>
+                      <p>
+                        Audio Sharing is compatible with Beats Flex, Solo Pro
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div style="flex-basis: 40%">
+                <p style="font-size: 18px; font-weight: 700">Give Review</p>
                 <p style="font-size: 18px; font-weight: 700">
-                  Your Rating <span style="color: red">*</span> :
+                  Your email address will not be published. Required fields are
+                  marked *
                 </p>
-                <div style="font-size: 16px; margin: 5px 0px">
-                  <i class="far fa-star" style="color: #a5a5a5"></i>
-                  <i class="far fa-star" style="color: #a5a5a5"></i>
-                  <i class="far fa-star" style="color: #a5a5a5"></i>
-                  <i class="far fa-star" style="color: #a5a5a5"></i>
-                  <i class="far fa-star" style="color: #a5a5a5"></i>
-                </div>
-              </div>
-              <p style="font-size: 18px; font-weight: 700">
-                Your Review <span style="color: red">*</span> :
-              </p>
-              <textarea class="text-area"></textarea>
-              <div
-                style="
-                  display: flex;
-                  align-items: center;
-                  gap: 10px;
-                  justify-content: space-between;
-                  margin-top: 10px;
-                "
-              >
-                <div style="flex-basis: 50%">
-                  <p style="font-size: 18px; margin: 0px; margin-bottom: 5px">
-                    Name <span style="color: red">*</span> :
+                <div style="display: flex; align-items: center; gap: 20px">
+                  <p style="font-size: 18px; font-weight: 700">
+                    Your Rating <span style="color: red">*</span> :
                   </p>
-                  <input type="text" class="input-field" />
+                  <div style="font-size: 16px; margin: 5px 0px">
+                    <i class="far fa-star" style="color: #a5a5a5"></i>
+                    <i class="far fa-star" style="color: #a5a5a5"></i>
+                    <i class="far fa-star" style="color: #a5a5a5"></i>
+                    <i class="far fa-star" style="color: #a5a5a5"></i>
+                    <i class="far fa-star" style="color: #a5a5a5"></i>
+                  </div>
                 </div>
-                <div style="flex-basis: 50%">
-                  <p style="font-size: 18px; margin: 0px; margin-bottom: 5px">
-                    Email <span style="color: red">*</span> :
-                  </p>
-                  <input type="text" class="input-field" />
+                <p style="font-size: 18px; font-weight: 700">
+                  Your Review <span style="color: red">*</span> :
+                </p>
+                <textarea class="text-area"></textarea>
+                <div
+                  style="
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    justify-content: space-between;
+                    margin-top: 10px;
+                  "
+                >
+                  <div style="flex-basis: 50%">
+                    <p style="font-size: 18px; margin: 0px; margin-bottom: 5px">
+                      Name <span style="color: red">*</span> :
+                    </p>
+                    <input type="text" class="input-field" />
+                  </div>
+                  <div style="flex-basis: 50%">
+                    <p style="font-size: 18px; margin: 0px; margin-bottom: 5px">
+                      Email <span style="color: red">*</span> :
+                    </p>
+                    <input type="text" class="input-field" />
+                  </div>
                 </div>
-              </div>
-              <div style="margin-top: 5px;">
-                <input type="checkbox" />
-                <span style="font-size: 18px">
-                  Save my name, email, and website in this browser for the next
-                  time I comment.
-                </span>
-              </div>
-              <div style="margin: 10px 0px;">
-                <button class="checkout-button" style="width: auto;padding: 10px 20px;">SUBMIT</button>
+                <div style="margin-top: 5px">
+                  <input type="checkbox" />
+                  <span style="font-size: 18px">
+                    Save my name, email, and website in this browser for the
+                    next time I comment.
+                  </span>
+                </div>
+                <div style="margin: 10px 0px">
+                  <button
+                    class="checkout-button"
+                    style="width: auto; padding: 10px 20px"
+                  >
+                    SUBMIT
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -727,6 +794,37 @@
         </div>
       </div>
     </div>
-    <script src="/JavaScript/index.js"></script>
+    <!-- <script src="/JavaScript/index.js"></script> -->
+    <script>
+      const tabs = document.querySelectorAll(".tab");
+      const description = document.getElementById("description");
+      const review = document.getElementById("review");
+
+      function Description(tabIndex, value) {
+        tabs.forEach((tab) => tab.classList.remove("selected"));
+        tabs[tabIndex].classList.add("selected");
+        description.style.transform = "translateX(0px)";
+        review.style.transform = "translateX(0px)";
+      }
+      function Review(tabIndex, value) {
+        tabs.forEach((tab) => tab.classList.remove("selected"));
+        tabs[tabIndex].classList.add("selected");
+        description.style.transform = "translateX(900px)";
+        review.style.transform = "translateX(900px)";
+      }
+
+      // for image view
+      function updateImage(ele) {
+        document.querySelector(".image-viewer").querySelector("img").src =
+          ele.src;
+        var images = document
+          .querySelector(".image-thumb")
+          .querySelectorAll("img");
+        for (i = 0; i < images.length; i++) {
+          images[i].classList.remove("active");
+        }
+        ele.classList.add("active");
+      }
+    </script>
   </body>
 </html>
