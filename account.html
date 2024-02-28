@@ -24,7 +24,6 @@
       referrerpolicy="no-referrer"
     />
   </head>
-
   <body
     style="
       padding: 0px;
@@ -116,13 +115,131 @@
               gap: 40px;
               font-family: Lato;
               font-weight: 500;
+              position: relative;
             "
+            id="nav-item-container"
           >
-            <p>Categories</p>
-            <p>Popular Categories</p>
-            <p>Featured Products</p>
-            <p>Sales</p>
-            <p>New Products</p>
+            <div class="dropdown">
+              <p class="nav-item" onclick="myFunction()">
+                Categories
+                <i class="fas fa-angle-down"></i>
+              </p>
+              <div id="myDropdown" class="dropdown-content">
+                <div style="display: flex">
+                  <div
+                    style="
+                      flex-basis: 45%;
+                      background: #eff8ff 0% 0% no-repeat padding-box;
+                      display: flex;
+                      flex-direction: column;
+                      margin: 0px;
+                      padding: 0px;
+                      font-weight: 600;
+                    "
+                  >
+                    <div
+                      class="dropdown-item selected"
+                      onclick="handleDropdownItem(0)"
+                    >
+                      <p>Apparels</p>
+                    </div>
+                    <div class="dropdown-item" onclick="handleDropdownItem(1)">
+                      <p>Style & Fashion</p>
+                    </div>
+                    <div class="dropdown-item" onclick="handleDropdownItem(2)">
+                      <p>Home & Garden</p>
+                    </div>
+                    <div class="dropdown-item" onclick="handleDropdownItem(3)">
+                      <p>Sporting Goods</p>
+                    </div>
+                    <div class="dropdown-item" onclick="handleDropdownItem(4)">
+                      <p>Health & Wellness</p>
+                    </div>
+                    <div class="dropdown-item" onclick="handleDropdownItem(5)">
+                      <p>Toys & Games</p>
+                    </div>
+                    <div class="dropdown-item" onclick="handleDropdownItem(6)">
+                      <p>Pets & Pet Supplies</p>
+                    </div>
+                    <div class="dropdown-item" onclick="handleDropdownItem(7)">
+                      <p>Camera & Mobile Accessories</p>
+                    </div>
+                    <div class="dropdown-item" onclick="handleDropdownItem(8)">
+                      <p>Home Appliances</p>
+                    </div>
+                  </div>
+                  <div style="flex-basis: 55%">
+                    <div
+                      style="
+                        padding: 30px 20px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+                      "
+                    >
+                      <div
+                        style="display: flex; align-items: center; gap: 50px"
+                      >
+                        <p>ALL</p>
+                        <i
+                          class="fas fa-chevron-right"
+                          style="color: #1388e5"
+                        ></i>
+                      </div>
+                      <div
+                        style="display: flex; align-items: center; gap: 50px"
+                      >
+                        <p>MEN</p>
+                        <i
+                          class="fas fa-chevron-right"
+                          style="color: #1388e5"
+                        ></i>
+                      </div>
+                      <div
+                        style="display: flex; align-items: center; gap: 50px"
+                      >
+                        <p>WOMEN</p>
+                        <i
+                          class="fas fa-chevron-right"
+                          style="color: #1388e5"
+                        ></i>
+                      </div>
+                      <div
+                        style="display: flex; align-items: center; gap: 50px"
+                      >
+                        <p>BOY</p>
+                        <i
+                          class="fas fa-chevron-right"
+                          style="color: #1388e5"
+                        ></i>
+                      </div>
+                      <div
+                        style="display: flex; align-items: center; gap: 50px"
+                      >
+                        <p>GIRL</p>
+                        <i
+                          class="fas fa-chevron-right"
+                          style="color: #1388e5"
+                        ></i>
+                      </div>
+                      <div
+                        style="display: flex; align-items: center; gap: 50px"
+                      >
+                        <p>BABY</p>
+                        <i
+                          class="fas fa-chevron-right"
+                          style="color: #1388e5"
+                        ></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="nav-item">Popular Categories</p>
+            <p class="nav-item">Featured Products</p>
+            <p class="nav-item">Sales</p>
+            <p class="nav-item">New Products</p>
           </div>
         </div>
       </div>
