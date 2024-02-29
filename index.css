@@ -1,3 +1,12 @@
+/* product slider  */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f5f5;
+    padding: 20px;
+}
 
 .banner {
     background-image: url('/Assets/images/banner.png');
@@ -59,14 +68,16 @@
     z-index: 200
 }
 
-#new{
-    left:0px
+#new {
+    left: 0px
 }
-#feature{
-    left:-1200px
+
+#feature {
+    left: -1200px
 }
-#new{
-    left:-2400px
+
+#new {
+    left: -2400px
 }
 
 
@@ -131,11 +142,13 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr) repeat(7, 1fr);
 }
-.banner-grid-item{
+
+.banner-grid-item {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
+
 .banner-grid-item:nth-child(1) {
     background-image: url('/Assets/images/LG.png');
     grid-column: span 5;
@@ -160,3 +173,19 @@
     width: 200px;
     height: auto;
 }
+
+
+/* swiper css */
+
+.slide-container {
+  max-width: 1300px;
+  width: 100%;
+  padding: 40px 0;
+}
+.slide-content {
+  margin: 0 5rem;
+  overflow: hidden;
+  /* border-radius: 25px; */
+}
+
+

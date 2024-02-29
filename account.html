@@ -258,19 +258,21 @@
           >
             <div style="max-width: 1000px; margin: 0 auto">
               <div
-                style="display: flex; gap: 20px; justify-content: space-between;flex-wrap: wrap;"
+                style="
+                  display: flex;
+                  gap: 20px;
+                  justify-content: space-between;
+                  flex-wrap: wrap;
+                "
               >
                 <div style="flex-basis: 35%">
-                  <p style="font-size: 18px;font-weight: 800;">LOGIN</p>
+                  <p style="font-size: 18px; font-weight: 800">LOGIN</p>
                   <div>
                     <p>
                       User Name or Email Address
                       <span style="color: red">*</span>
                     </p>
-                    <input
-                      type="text"
-                      class="account-input"
-                    />
+                    <input type="text" class="account-input" />
                   </div>
                   <div>
                     <p>Password <span style="color: red">*</span></p>
@@ -313,20 +315,14 @@
                   </div>
                 </div>
                 <div style="flex-basis: 35%">
-                  <p style="font-size: 18px;font-weight: 800;">REGISTER</p>
+                  <p style="font-size: 18px; font-weight: 800">REGISTER</p>
                   <div>
                     <p>User Name <span style="color: red">*</span></p>
-                    <input
-                      type="text"
-                      class="account-input"
-                    />
+                    <input type="text" class="account-input" />
                   </div>
                   <div>
                     <p>Email Address<span style="color: red">*</span></p>
-                    <input
-                      type="text"
-                      class="account-input"
-                    />
+                    <input type="text" class="account-input" />
                   </div>
                   <div>
                     <p>Password <span style="color: red">*</span></p>
@@ -337,7 +333,7 @@
                       ></span>
                     </div>
                   </div>
-                  <div style="margin-top: 30px;">
+                  <div style="margin-top: 30px">
                     <button
                       class="checkout-button"
                       style="width: auto; padding: 15px 30px"
@@ -495,5 +491,23 @@
     </div>
     <!-- Include the JavaScript file -->
     <script src="/JavaScript/index.js"></script>
+    <script>
+      // Function for password toggle in account page
+
+      const passwordField = document.getElementById("password");
+      const togglePassword = document.querySelector(".password-toggle-icon i");
+
+      togglePassword.addEventListener("click", function () {
+        if (passwordField.type === "password") {
+          passwordField.type = "text";
+          togglePassword.classList.remove("fa-eye");
+          togglePassword.classList.add("fa-eye-slash");
+        } else {
+          passwordField.type = "password";
+          togglePassword.classList.remove("fa-eye-slash");
+          togglePassword.classList.add("fa-eye");
+        }
+      });
+    </script>
   </body>
 </html>
