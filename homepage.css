@@ -2,6 +2,153 @@
     box-sizing: border-box
 }
 
+.gap {
+    margin-bottom: 100px
+}
+
+.filter-cont {
+    display: flex;
+}
+
+.filter-col1 {
+    flex-basis: 30%
+}
+
+.filter-col2 {
+    flex-basis: 70%
+}
+
+.filter-col2-cont {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.filter-item-cont {
+    display: flex;
+    align-items: center;
+    gap: 20px
+}
+
+.filter-item-col {
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+.products-cont {
+    border-top: 1px solid #0000001a;
+    margin-top: 20px
+}
+
+.products-wrapper {
+    display: flex;
+}
+
+.products-col1 {
+    flex-basis: 30%;
+    border-right: 1px solid #0000001a
+}
+
+.products-col2 {
+    flex-basis: 70%;
+}
+
+.top-rated-cont {
+    margin-top: 5rem
+}
+
+.top-rated-head {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.top-product-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 30px
+}
+
+.single-product-cont {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.single-img-cont {
+    box-shadow: 0px 3px 6px #00000029;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 5px 0px;
+    align-items: center;
+    height: 120px;
+    width: 120px;
+}
+
+.product-rating-cont {
+    font-size: 15px;
+    margin: 5px 0px;
+    color: #ffd60c;
+}
+
+.cards-wrapper {
+    padding: 5rem 20px
+}
+
+.products-container {
+    justify-content: space-between !important;
+    gap: 10px !important
+}
+
+.product-card {
+    border-radius: 0px !important;
+    padding: 30px 20px !important
+}
+
+.product-card-head {
+    margin: 0px;
+    font-weight: 700
+}
+
+.product-ratings {
+    font-size: 20px;
+    margin: 5px 0px;
+    color: #ffd60c;
+}
+
+.product-card .product-desc-cont {
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+.product-desc-text {
+    color: #1388e5;
+    font-weight: 700;
+    margin-top: 0px;
+}
+
+.product-card-btn-cont {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.product-card-btn {
+    border-radius: 0px !important;
+    padding: 10px 20px !important
+}
+
+
+
+
+
+
+
 .grid-icon {
     display: flex;
     flex-direction: column;
@@ -22,4 +169,3 @@
 
 
 /*  */
-

@@ -1,7 +1,67 @@
+.account-main-cont {
+    margin-bottom: 100px;
+    padding: 50px 0px 80px 0px
+}
+
+.account-main-head {
+    font-size: 40px;
+    margin: 0px;
+    padding-bottom: 20px
+}
+
+.form-main-cont {
+    border-top: 1px solid #aeaeae;
+    border-bottom: 1px solid #aeaeae;
+    padding: 30px 0px;
+}
+
+.form-sub-cont {
+    max-width: 1000px;
+    margin: 0 auto
+}
+
+.form-wrapper {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.form-col {
+    flex-basis: 35%
+}
+
+.login-head {
+    font-size: 18px;
+    font-weight: 800
+}
+
+.checkbox-cont {
+    display: flex;
+    gap: 10px
+}
+
+.login-btn {
+    width: auto !important;
+    padding: 15px 30px !important
+}
+
+.forgot-password {
+    color: #363434;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+
+
 .password-input input {
     border: none;
     width: calc(100% - 30px);
 }
+
 .password-input input:focus {
     outline: none;
 }
@@ -18,11 +78,11 @@
 .password-input .icons {
     cursor: pointer;
 }
-.account-input{
+
+.account-input {
     border: 1px solid #707070;
     border-radius: 10px;
     padding: 12px 15px;
     outline: none;
     width: 100%;
 }
-

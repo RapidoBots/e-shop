@@ -1,3 +1,240 @@
+.product-main-wrapper {
+    padding: 50px 0px 100px
+}
+
+.product-sub-wrapper {
+    display: flex;
+    box-shadow: 0px 3px 6px #00000029
+}
+
+.product-desc-col {
+    flex-basis: 50%
+}
+
+.product-desc-subcol2 {
+    padding-left: 40px
+}
+
+.product-desc-subcol2 .main-head {
+    font-size: 45px;
+    color: #000000;
+    font-weight: 800
+}
+
+.product-desc-subcol2 .price-head {
+    font-size: 45px;
+    color: #1388e5;
+    font-weight: 600
+}
+
+.product-desc-subcol2 .product-feature-wrapper {
+    padding: 10px 0px
+}
+
+.product-desc-subcol2 .color-wrapper {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.product-desc-subcol2 .size-wrapper {
+    display: flex;
+    gap: 10px;
+    text-align: center
+}
+
+.max-num-input {
+    padding: 30px 20px !important;
+    width: 100px !important;
+    box-sizing: border-box;
+}
+
+.add-to-cart-btn {
+    width: auto !important;
+    padding: 18px 50px !important;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.reviews-wrapper {
+    display: flex;
+    gap: 50px;
+    padding: 30px 0px
+}
+
+.rate-wrapper {
+    font-size: 24px;
+    color: #ffd60c
+}
+
+.blue-text {
+    color: #1388e5;
+    font-weight: 700
+}
+
+.product-share-icon {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+
+}
+
+.tabs-main-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.tabs-sub-cont {
+    padding-bottom: 100px;
+    position: relative;
+    overflow: hidden;
+    width: 900px;
+    height: 900px;
+    padding: 0px 20px;
+}
+
+.desc-main-cont {
+    position: absolute;
+    top: 130px;
+    max-width: 1100px;
+    transition: transform 1s;
+    height: 700px;
+}
+
+.desc-sub-cont {
+    padding: 40px 0px
+}
+
+.text-image {
+    display: flex;
+    align-items: center;
+    gap: 40px
+}
+
+.reviews-main-cont {
+    position: absolute;
+    top: 130px;
+    max-width: 900px;
+    transition: transform 1s;
+    height: 900px;
+}
+
+.reviews-col {
+    flex-basis: 40%;
+}
+
+.reviews-col .main-head {
+    font-size: 18px;
+    font-weight: 600
+}
+
+.review-card-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+.review-card {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 10px;
+    border: 1px solid #d2d2d2;
+    padding: 5px 10px;
+}
+
+.review-rate-wrapper {
+    /* font-size: 24px; */
+    color: #ffd60c
+}
+
+.rating-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px
+}
+
+.rating-wrapper .rating-icon-cont {
+    color: #a5a5a5;
+    margin: 5px 0px
+}
+
+.rating-form-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.rating-form-col {
+    flex-basis: 50%
+}
+
+.rating-form-col p {
+    font-size: 18px;
+    margin: 0px;
+    margin-bottom: 5px
+}
+
+.rating-checkbox-cont {
+    margin-top: 5px
+}
+
+.rating-button-cont {
+    margin: 10px 0px
+}
+
+.rating-submit-btn {
+    width: auto !important;
+    padding: 10px 20px !important
+}
+
+.security-cont {
+    padding-bottom: 100px
+}
+
+.related-main-cont {
+    padding-bottom: 100px
+}
+
+.related-main-head {
+    font-size: 30px
+}
+
+.related-cards {
+    border-radius: 0px !important;
+    padding: 30px 10px !important;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.related-card-head {
+    margin: 0px !important;
+    font-weight: 700
+}
+
+.related-cards .card-desc-cont {
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+.related-card-btn-cont {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.related-card-btn {
+    /* padding: 5px 10px !important; */
+    border-radius: 0px !important;
+    width: auto !important;
+}
+
+
 .color-circle {
     width: 30px;
     height: 30px;
@@ -81,8 +318,8 @@
 }
 
 .image-viewer img {
-   width: 100%;
-   height: auto;
+    width: 100%;
+    height: auto;
 }
 
 .image-thumb {
@@ -105,4 +342,3 @@
     opacity: 1 !important;
     border: 1px solid red !important;
 }
-

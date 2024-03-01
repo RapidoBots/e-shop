@@ -35,24 +35,10 @@
     <div>
       <!-- Header -->
       <div>
-        <div style="background-color: #1388e5">
-          <div style="max-width: 1300px; margin: 0px auto">
-            <div
-              style="
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-              "
-            >
-              <div
-                style="
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-                  gap: 5px;
-                "
-                class="lato_heavy"
-              >
+        <div class="alert-container">
+          <div class="parent-max-width">
+            <div class="flex-cont">
+              <div style="gap: 5px" class="lato_heavy flex-cont">
                 <p>CALL US:</p>
                 <p>+1 131 138 138</p>
               </div>
@@ -65,60 +51,29 @@
             </div>
           </div>
         </div>
-        <div style="max-width: 1300px; margin: 0px auto">
-          <div
-            style="
-              /* display: flex;
-              justify-content: space-between;
-              align-items: center; */
-              padding: 10px 0px;
-              display: grid;
-              grid-template-columns: repeat(12, 1fr);
-              gap: 10px;
-            "
-          >
-            <div style="grid-column: span 2">
+        <div class="parent-max-width">
+          <div class="header-grid">
+            <div id="header-grid-column-1">
               <img
                 src="./Assets/images/Logo.png"
                 alt=""
                 style="cursor: pointer; width: 160px"
               />
             </div>
-            <div class="search-container" style="grid-column: span 8">
+            <div class="search-container" id="header-grid-column-2">
               <input type="text" class="search-input" placeholder="Search" />
               <button class="search-button">Search</button>
             </div>
-            <div
-              style="
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
-                gap: 10px;
-                grid-column: span 2;
-              "
-            >
+            <div id="header-grid-column-3">
               <img src="./Assets/images/heart.png" class="icons" alt="" />
               <img src="./Assets/images/cart.png" class="icons" alt="" />
               <img src="./Assets/images/user.png" class="icons" alt="" />
             </div>
           </div>
-          <hr
-            style="margin: 0px 30px; border-color: rgba(0, 0, 0, 0.1)"
-            class="solid"
-          />
+          <hr class="solid header-line" />
         </div>
-        <div style="display: flex; justify-content: center; padding: 10px 0px">
-          <div
-            style="
-              display: flex;
-              justify-content: space-between;
-              gap: 40px;
-              font-family: Lato;
-              font-weight: 500;
-              position: relative;
-            "
-            id="nav-item-container"
-          >
+        <div class="nav-item-main">
+          <div class="flex-cont nav-item-sub" id="nav-item-container">
             <div class="dropdown">
               <p class="nav-item" onclick="myFunction()">
                 Categories
@@ -126,17 +81,7 @@
               </p>
               <div id="myDropdown" class="dropdown-content">
                 <div style="display: flex">
-                  <div
-                    style="
-                      flex-basis: 45%;
-                      background: #eff8ff 0% 0% no-repeat padding-box;
-                      display: flex;
-                      flex-direction: column;
-                      margin: 0px;
-                      padding: 0px;
-                      font-weight: 600;
-                    "
-                  >
+                  <div id="dropdown-left">
                     <div
                       class="dropdown-item selected"
                       onclick="handleDropdownItem(0)"
@@ -168,63 +113,44 @@
                       <p>Home Appliances</p>
                     </div>
                   </div>
-                  <div style="flex-basis: 55%">
-                    <div
-                      style="
-                        padding: 30px 20px;
-                        display: flex;
-                        flex-direction: column;
-                        gap: 20px;
-                      "
-                    >
-                      <div
-                        style="display: flex; align-items: center; gap: 50px"
-                      >
+                  <div id="dropdown-right">
+                    <div id="dropdown-right-sub">
+                      <div class="dropdown-right-single-item">
                         <p>ALL</p>
                         <i
                           class="fas fa-chevron-right"
                           style="color: #1388e5"
                         ></i>
                       </div>
-                      <div
-                        style="display: flex; align-items: center; gap: 50px"
-                      >
+                      <div class="dropdown-right-single-item">
                         <p>MEN</p>
                         <i
                           class="fas fa-chevron-right"
                           style="color: #1388e5"
                         ></i>
                       </div>
-                      <div
-                        style="display: flex; align-items: center; gap: 50px"
-                      >
+                      <div class="dropdown-right-single-item">
                         <p>WOMEN</p>
                         <i
                           class="fas fa-chevron-right"
                           style="color: #1388e5"
                         ></i>
                       </div>
-                      <div
-                        style="display: flex; align-items: center; gap: 50px"
-                      >
+                      <div class="dropdown-right-single-item">
                         <p>BOY</p>
                         <i
                           class="fas fa-chevron-right"
                           style="color: #1388e5"
                         ></i>
                       </div>
-                      <div
-                        style="display: flex; align-items: center; gap: 50px"
-                      >
+                      <div class="dropdown-right-single-item">
                         <p>GIRL</p>
                         <i
                           class="fas fa-chevron-right"
                           style="color: #1388e5"
                         ></i>
                       </div>
-                      <div
-                        style="display: flex; align-items: center; gap: 50px"
-                      >
+                      <div class="dropdown-right-single-item">
                         <p>BABY</p>
                         <i
                           class="fas fa-chevron-right"
@@ -244,29 +170,14 @@
         </div>
       </div>
       <!-- ACCOUNT -->
-      <div style="margin-bottom: 100px; padding: 50px 0px 80px 0px">
-        <div style="max-width: 1300px; margin: 0 auto">
-          <p style="font-size: 40px; margin: 0px; padding-bottom: 20px">
-            ACCOUNT
-          </p>
-          <div
-            style="
-              border-top: 1px solid #aeaeae;
-              border-bottom: 1px solid #aeaeae;
-              padding: 30px 0px;
-            "
-          >
-            <div style="max-width: 1000px; margin: 0 auto">
-              <div
-                style="
-                  display: flex;
-                  gap: 20px;
-                  justify-content: space-between;
-                  flex-wrap: wrap;
-                "
-              >
-                <div style="flex-basis: 35%">
-                  <p style="font-size: 18px; font-weight: 800">LOGIN</p>
+      <div class="account-main-cont">
+        <div class="parent-max-width">
+          <p class="account-main-head">ACCOUNT</p>
+          <div class="form-main-cont">
+            <div class="form-sub-cont">
+              <div class="form-wrapper">
+                <div class="form-col">
+                  <p class="login-head">LOGIN</p>
                   <div>
                     <p>
                       User Name or Email Address
@@ -283,39 +194,21 @@
                       ></span>
                     </div>
                   </div>
-                  <div style="display: flex; gap: 10px">
+                  <div class="checkbox-cont">
                     <p>Remeber Me</p>
                     <input type="checkbox" oninput="handleChange(event)" />
                   </div>
-                  <div
-                    style="
-                      display: flex;
-                      justify-content: space-between;
-                      align-items: center;
-                      gap: 30px;
-                    "
-                  >
-                    <button
-                      class="checkout-button"
-                      style="width: auto; padding: 15px 30px"
-                    >
-                      Log In
-                    </button>
+                  <div style="gap: 30px" class="flex-cont">
+                    <button class="checkout-button login-btn" >Log In</button>
                     <a
                       href="#"
-                      style="
-                        color: #363434;
-                        border: none;
-                        border-radius: 5px;
-                        cursor: pointer;
-                        font-size: 16px;
-                      "
+                      class="forgot-password"
                       >Forgot Password?</a
                     >
                   </div>
                 </div>
-                <div style="flex-basis: 35%">
-                  <p style="font-size: 18px; font-weight: 800">REGISTER</p>
+                <div class="form-col">
+                  <p class="login-head">REGISTER</p>
                   <div>
                     <p>User Name <span style="color: red">*</span></p>
                     <input type="text" class="account-input" />
@@ -335,8 +228,7 @@
                   </div>
                   <div style="margin-top: 30px">
                     <button
-                      class="checkout-button"
-                      style="width: auto; padding: 15px 30px"
+                      class="checkout-button login-btn"
                     >
                       Register
                     </button>
@@ -348,31 +240,13 @@
         </div>
       </div>
       <!-- Footer -->
-      <div style="background-color: #363434; padding: 10px">
-        <div style="margin-top: -80px">
-          <div style="max-width: 1300px; margin: 0 auto">
+      <div class="footer-main-cont">
+        <div class="subscribe-row">
+          <div class="parent-max-width">
             <div style="position: relative">
-              <div
-                style="
-                  background: linear-gradient(
-                    to bottom right,
-                    #085fa7,
-                    #1388e5
-                  );
-                  padding: 30px 100px;
-                  z-index: 200;
-                "
-              >
-                <div
-                  style="
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    gap: 50px;
-                    z-index: 100;
-                  "
-                >
-                  <div style="display: flex; align-items: center; gap: 30px">
+              <div class="subscribe-sub-row">
+                <div style="gap: 50px; z-index: 100" class="flex-cont">
+                  <div class="subscribe-col-1">
                     <img
                       src="/Assets/images/Layer_4.png"
                       alt=""
@@ -383,7 +257,7 @@
                       every week
                     </p>
                   </div>
-                  <div style="display: flex; gap: 10px">
+                  <div class="subscribe-col-1 subscribe-col-2">
                     <input
                       type="text"
                       class="email-input"
@@ -401,39 +275,16 @@
             </div>
           </div>
         </div>
-        <div
-          style="
-            height: 500px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            /* flex-direction: column; */
-            z-index: 0;
-          "
-        >
-          <div style="max-width: 1000px; margin: 0 auto">
-            <div
-              style="
-                display: grid;
-                grid-template-columns: repeat(6, 1fr) repeat(6, 1fr);
-                grid-gap: 10px;
-                z-index: 1;
-              "
-            >
-              <div style="grid-column: span 6; max-width: 450px">
+        <div class="flex-cont footer-desc-row">
+          <div class="parent-max-width">
+            <div class="footer-grid-row">
+              <div class="footer-grid-col1">
                 <img src="/Assets/images/LogoWhite.png" alt="" />
                 <p style="color: #ffffff">
                   High quality Scandinavian furniture made from eco-friendly
                   materials. Designed for modern, minimalist apartments
                 </p>
-                <div
-                  style="
-                    display: flex;
-                    align-items: center;
-                    justify-content: flex-start;
-                    gap: 10px;
-                  "
-                >
+                <div class="footer-icon-cont">
                   <img src="/Assets/images/facebook.png" alt="" />
                   <img src="/Assets/images/twitter.png" alt="" />
                   <img src="/Assets/images/linkedin (1).png" alt="" />
@@ -441,17 +292,10 @@
                   <img src="/Assets/images/youtube (1).png" alt="" />
                 </div>
               </div>
-              <div
-                style="
-                  grid-column: span 6;
-                  display: flex;
-                  justify-content: space-between;
-                  gap: 50px;
-                "
-              >
+              <div class="footer-grid-col2">
                 <div>
                   <p style="color: #ffffff">Shopping online</p>
-                  <div style="color: #aeaeae">
+                  <div class="grey-text">
                     <p>Order Status</p>
                     <p>Shipping and Delivery</p>
                     <p>Returns</p>
@@ -461,7 +305,7 @@
                 </div>
                 <div>
                   <p style="color: #ffffff">Information</p>
-                  <div style="color: #aeaeae">
+                  <div class="grey-text">
                     <p>Gift Cards</p>
                     <p>Find a store</p>
                     <p>Newsletter</p>
@@ -471,7 +315,7 @@
                 </div>
                 <div>
                   <p style="color: #ffffff">Contact</p>
-                  <div style="color: #aeaeae">
+                  <div class="grey-text">
                     <p>store@uikit.com</p>
                     <p>Hotline: +1 131 138 138</p>
                   </div>
@@ -481,11 +325,11 @@
           </div>
         </div>
         <div>
-          <hr style="border-color: #aeaeae" class="solid" />
-          <p style="color: #aeaeae; text-align: center">
+          <hr class="solid grey-border" />
+          <p style="text-align: center" class="grey-text">
             © 2022. ALL RIGHTS RESERVED.
           </p>
-          <hr style="border-color: #aeaeae" class="solid" />
+          <hr class="solid grey-border" />
         </div>
       </div>
     </div>

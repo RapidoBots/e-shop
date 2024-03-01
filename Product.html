@@ -35,24 +35,10 @@
     <div>
       <!-- Header -->
       <div>
-        <div style="background-color: #1388e5">
-          <div style="max-width: 1300px; margin: 0px auto">
-            <div
-              style="
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-              "
-            >
-              <div
-                style="
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-                  gap: 5px;
-                "
-                class="lato_heavy"
-              >
+        <div class="alert-container">
+          <div class="parent-max-width">
+            <div class="flex-cont">
+              <div style="gap: 5px" class="lato_heavy flex-cont">
                 <p>CALL US:</p>
                 <p>+1 131 138 138</p>
               </div>
@@ -65,60 +51,29 @@
             </div>
           </div>
         </div>
-        <div style="max-width: 1300px; margin: 0px auto">
-          <div
-            style="
-              /* display: flex;
-              justify-content: space-between;
-              align-items: center; */
-              padding: 10px 0px;
-              display: grid;
-              grid-template-columns: repeat(12, 1fr);
-              gap: 10px;
-            "
-          >
-            <div style="grid-column: span 2">
+        <div class="parent-max-width">
+          <div class="header-grid">
+            <div id="header-grid-column-1">
               <img
                 src="./Assets/images/Logo.png"
                 alt=""
                 style="cursor: pointer; width: 160px"
               />
             </div>
-            <div class="search-container" style="grid-column: span 8">
+            <div class="search-container" id="header-grid-column-2">
               <input type="text" class="search-input" placeholder="Search" />
               <button class="search-button">Search</button>
             </div>
-            <div
-              style="
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
-                gap: 10px;
-                grid-column: span 2;
-              "
-            >
+            <div id="header-grid-column-3">
               <img src="./Assets/images/heart.png" class="icons" alt="" />
               <img src="./Assets/images/cart.png" class="icons" alt="" />
               <img src="./Assets/images/user.png" class="icons" alt="" />
             </div>
           </div>
-          <hr
-            style="margin: 0px 30px; border-color: rgba(0, 0, 0, 0.1)"
-            class="solid"
-          />
+          <hr class="solid header-line" />
         </div>
-        <div style="display: flex; justify-content: center; padding: 10px 0px">
-          <div
-            style="
-              display: flex;
-              justify-content: space-between;
-              gap: 40px;
-              font-family: Lato;
-              font-weight: 500;
-              position: relative;
-            "
-            id="nav-item-container"
-          >
+        <div class="nav-item-main">
+          <div class="flex-cont nav-item-sub" id="nav-item-container">
             <div class="dropdown">
               <p class="nav-item" onclick="myFunction()">
                 Categories
@@ -126,17 +81,7 @@
               </p>
               <div id="myDropdown" class="dropdown-content">
                 <div style="display: flex">
-                  <div
-                    style="
-                      flex-basis: 45%;
-                      background: #eff8ff 0% 0% no-repeat padding-box;
-                      display: flex;
-                      flex-direction: column;
-                      margin: 0px;
-                      padding: 0px;
-                      font-weight: 600;
-                    "
-                  >
+                  <div id="dropdown-left">
                     <div
                       class="dropdown-item selected"
                       onclick="handleDropdownItem(0)"
@@ -168,63 +113,44 @@
                       <p>Home Appliances</p>
                     </div>
                   </div>
-                  <div style="flex-basis: 55%">
-                    <div
-                      style="
-                        padding: 30px 20px;
-                        display: flex;
-                        flex-direction: column;
-                        gap: 20px;
-                      "
-                    >
-                      <div
-                        style="display: flex; align-items: center; gap: 50px"
-                      >
+                  <div id="dropdown-right">
+                    <div id="dropdown-right-sub">
+                      <div class="dropdown-right-single-item">
                         <p>ALL</p>
                         <i
                           class="fas fa-chevron-right"
                           style="color: #1388e5"
                         ></i>
                       </div>
-                      <div
-                        style="display: flex; align-items: center; gap: 50px"
-                      >
+                      <div class="dropdown-right-single-item">
                         <p>MEN</p>
                         <i
                           class="fas fa-chevron-right"
                           style="color: #1388e5"
                         ></i>
                       </div>
-                      <div
-                        style="display: flex; align-items: center; gap: 50px"
-                      >
+                      <div class="dropdown-right-single-item">
                         <p>WOMEN</p>
                         <i
                           class="fas fa-chevron-right"
                           style="color: #1388e5"
                         ></i>
                       </div>
-                      <div
-                        style="display: flex; align-items: center; gap: 50px"
-                      >
+                      <div class="dropdown-right-single-item">
                         <p>BOY</p>
                         <i
                           class="fas fa-chevron-right"
                           style="color: #1388e5"
                         ></i>
                       </div>
-                      <div
-                        style="display: flex; align-items: center; gap: 50px"
-                      >
+                      <div class="dropdown-right-single-item">
                         <p>GIRL</p>
                         <i
                           class="fas fa-chevron-right"
                           style="color: #1388e5"
                         ></i>
                       </div>
-                      <div
-                        style="display: flex; align-items: center; gap: 50px"
-                      >
+                      <div class="dropdown-right-single-item">
                         <p>BABY</p>
                         <i
                           class="fas fa-chevron-right"
@@ -244,10 +170,10 @@
         </div>
       </div>
       <!-- Product Description -->
-      <div style="padding: 50px 0px 100px">
+      <div class="product-main-wrapper">
         <p style="text-align: center">Home / Electronics</p>
-        <div style="display: flex; box-shadow: 0px 3px 6px #00000029">
-          <div style="background-color: #eff8ff; flex-basis: 50%">
+        <div class="product-sub-wrapper">
+          <div style="background-color: #eff8ff" class="product-desc-col">
             <div class="product-gallery">
               <div class="image-thumb">
                 <img
@@ -269,14 +195,10 @@
               </div>
             </div>
           </div>
-          <div style="flex-basis: 50%">
-            <div style="padding-left: 40px">
-              <p style="font-size: 45px; color: #000000; font-weight: 800">
-                Beats Solo Pro Wireless
-              </p>
-              <p style="font-size: 45px; color: #1388e5; font-weight: 600">
-                $665.95
-              </p>
+          <div class="product-desc-col">
+            <div class="product-desc-subcol2">
+              <p class="main-head">Beats Solo Pro Wireless</p>
+              <p class="price-head">$665.95</p>
               <p>
                 Audio Sharing is compatible with Beats Flex, Solo Pro,
                 Powerbeats Pro, Powerbeats, Solo3 Wireless, Powerbeats3
@@ -284,9 +206,9 @@
                 generation or later), and AirPods Pro. Works with iPhone 8 or
                 later and iPod touch (7th generation)
               </p>
-              <div style="padding: 10px 0px">
+              <div class="product-feature-wrapper">
                 <p>Color</p>
-                <div style="display: flex; gap: 10px">
+                <div class="color-wrapper">
                   <div
                     class="color-circle"
                     style="background-color: #363434"
@@ -301,75 +223,42 @@
                   ></div>
                 </div>
               </div>
-              <div style="padding: 10px 0px">
+              <div class="product-feature-wrapper">
                 <p>Size</p>
-                <div style="display: flex; gap: 10px; text-align: center">
+                <div class="size-wrapper">
                   <div class="size-box">S</div>
                   <div class="size-box">M</div>
                   <div class="size-box">L</div>
                   <div class="size-box">XL</div>
                 </div>
               </div>
-              <div
-                style="
-                  display: flex;
-                  gap: 10px;
-                  align-items: center;
-                  padding: 10px 0px;
-                "
-              >
+              <div class="product-feature-wrapper color-wrapper">
                 <input
                   type="number"
-                  class="number-input"
-                  style="
-                    padding: 30px 20px !important;
-                    width: 100px;
-                    box-sizing: border-box;
-                  "
+                  class="number-input max-num-input"
                   placeholder="0"
                 />
-                <button
-                  class="checkout-button"
-                  style="
-                    width: auto;
-                    padding: 18px 50px;
-                    font-size: 20px;
-                    font-weight: 600;
-                  "
-                >
+                <button class="checkout-button add-to-cart-btn">
                   ADD TO CART
                 </button>
               </div>
-              <div style="display: flex; gap: 50px; padding: 30px 0px">
-                <div>
-                  <div style="display: flex; align-items: center; gap: 10px">
-                    <div style="font-size: 24px">
-                      <i class="fas fa-star star" style="color: #ffd60c"></i>
-                      <i class="fas fa-star star" style="color: #ffd60c"></i>
-                      <i class="fas fa-star star" style="color: #ffd60c"></i>
-                      <i class="fas fa-star star" style="color: #ffd60c"></i>
-                      <i class="fas fa-star star" style="color: #ffd60c"></i>
-                    </div>
-                    <p style="color: #1388e5; font-weight: 700">
-                      4.4 (328 reviews)
-                    </p>
+              <div class="reviews-wrapper">
+                <div class="color-wrapper">
+                  <div class="rate-wrapper">
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
                   </div>
+                  <p class="blue-text">4.4 (328 reviews)</p>
                 </div>
                 <div>
-                  <p style="color: #1388e5; font-weight: 700">
-                    Add to Wishlist
-                  </p>
+                  <p class="blue-text">Add to Wishlist</p>
                 </div>
-                <div style="display: flex; gap: 10px">
+                <div class="color-wrapper">
                   <p style="font-weight: 700">Share:</p>
-                  <div
-                    style="
-                      display: flex;
-                      align-items: center;
-                      justify-content: flex-start;
-                      gap: 10px;
-                    "
-                  >
+                  <div class="product-share-icon">
                     <img src="/Assets/images/facebook.png" alt="" />
                     <img src="/Assets/images/twitter.png" alt="" />
                     <img src="/Assets/images/instagram.png" alt="" />
@@ -381,18 +270,9 @@
         </div>
       </div>
       <!-- Tabs -->
-      <div style="display: flex; justify-content: center; align-items: center">
-        <div
-          style="
-            padding-bottom: 100px;
-            position: relative;
-            overflow: hidden;
-            width: 900px;
-            height: 900px;
-            padding: 0px 20px;
-          "
-        >
-          <div style="display: flex; justify-content: center">
+      <div class="tabs-main-cont">
+        <div class="tabs-sub-cont">
+          <div class="tabs-main-cont">
             <div class="tabs">
               <div class="tab selected" onclick="Description(0,'description')">
                 DESCRIPTION
@@ -400,25 +280,10 @@
               <div class="tab" onclick="Review(1,'review')">REVIEWS</div>
             </div>
           </div>
-          <div
-            style="
-              position: absolute;
-              top: 130px;
-              max-width: 1100px;
-              transition: transform 1s;
-              height: 700px;
-            "
-            id="description"
-          >
-            <div
-              style="
-                display: flex;
-                justify-content: center;
-                align-items: center;
-              "
-            >
-              <div style="padding: 40px 0px">
-                <div style="display: flex; align-items: center; gap: 40px">
+          <div class="desc-main-cont" id="description">
+            <div class="flex-cont">
+              <div class="desc-sub-cont">
+                <div class="text-image">
                   <img src="/Assets/images/b.png" alt="" />
                   <p>
                     BEATS STUDIO 3 WIRELESS HEADPHONE price n is updated on
@@ -447,42 +312,29 @@
               </div>
             </div>
           </div>
-          <div
-            style="
-              position: absolute;
-              top: 130px;
-              max-width: 900px;
-              transition: transform 1s;
-              height: 900px;
-            "
-            id="review"
-          >
-            <div
-              style="
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                width: 100%;
-              "
-            >
-              <div style="flex-basis: 40%">
-                <p style="font-size: 18px; font-weight: 600">REVIEWS</p>
+          <div class="reviews-main-cont" id="review">
+            <div class="flex-cont">
+              <div class="reviews-col">
+                <p class="main-head">REVIEWS</p>
                 <div>
-                  <p style="font-size: 18px; font-weight: 600">
-                    There are (328 reviews)
-                  </p>
-                  <div style="display: flex; flex-direction: column; gap: 10px">
-                    <div
-                      style="
-                        background: #ffffff 0% 0% no-repeat padding-box;
-                        box-shadow: 0px 3px 6px #00000029;
-                        border-radius: 10px;
-                        border: 1px solid #d2d2d2;
-                        padding: 5px 10px;
-                      "
-                    >
+                  <p class="main-head">There are (328 reviews)</p>
+                  <div class="review-card-wrapper">
+                    <div class="review-card">
                       <p>Cory</p>
-                      <div>
+                      <div class="review-rate-wrapper">
+                        <i class="fas fa-star star"></i>
+                        <i class="fas fa-star star"></i>
+                        <i class="fas fa-star star"></i>
+                        <i class="fas fa-star star"></i>
+                        <i class="fas fa-star star"></i>
+                      </div>
+                      <p>
+                        Audio Sharing is compatible with Beats Flex, Solo Pro
+                      </p>
+                    </div>
+                    <div class="review-card">
+                      <p>Cory</p>
+                      <div class="review-rate-wrapper">
                         <i class="fas fa-star star" style="color: #ffd60c"></i>
                         <i class="fas fa-star star" style="color: #ffd60c"></i>
                         <i class="fas fa-star star" style="color: #ffd60c"></i>
@@ -493,38 +345,9 @@
                         Audio Sharing is compatible with Beats Flex, Solo Pro
                       </p>
                     </div>
-                    <div
-                      style="
-                        background: #ffffff 0% 0% no-repeat padding-box;
-                        box-shadow: 0px 3px 6px #00000029;
-                        border-radius: 10px;
-                        border: 1px solid #d2d2d2;
-                        padding: 5px 10px;
-                      "
-                    >
+                    <div class="review-card">
                       <p>Cory</p>
-                      <div>
-                        <i class="fas fa-star star" style="color: #ffd60c"></i>
-                        <i class="fas fa-star star" style="color: #ffd60c"></i>
-                        <i class="fas fa-star star" style="color: #ffd60c"></i>
-                        <i class="fas fa-star star" style="color: #ffd60c"></i>
-                        <i class="fas fa-star star" style="color: #ffd60c"></i>
-                      </div>
-                      <p>
-                        Audio Sharing is compatible with Beats Flex, Solo Pro
-                      </p>
-                    </div>
-                    <div
-                      style="
-                        background: #ffffff 0% 0% no-repeat padding-box;
-                        box-shadow: 0px 3px 6px #00000029;
-                        border-radius: 10px;
-                        border: 1px solid #d2d2d2;
-                        padding: 5px 10px;
-                      "
-                    >
-                      <p>Cory</p>
-                      <div>
+                      <div class="review-rate-wrapper">
                         <i class="fas fa-star star" style="color: #ffd60c"></i>
                         <i class="fas fa-star star" style="color: #ffd60c"></i>
                         <i class="fas fa-star star" style="color: #ffd60c"></i>
@@ -538,62 +361,47 @@
                   </div>
                 </div>
               </div>
-              <div style="flex-basis: 40%">
-                <p style="font-size: 18px; font-weight: 700">Give Review</p>
-                <p style="font-size: 18px; font-weight: 700">
+              <div class="reviews-col">
+                <p class="main-head">Give Review</p>
+                <p class="main-head">
                   Your email address will not be published. Required fields are
                   marked *
                 </p>
-                <div style="display: flex; align-items: center; gap: 20px">
-                  <p style="font-size: 18px; font-weight: 700">
+                <div class="rating-wrapper">
+                  <p class="main-head">
                     Your Rating <span style="color: red">*</span> :
                   </p>
-                  <div style="font-size: 16px; margin: 5px 0px">
-                    <i class="far fa-star" style="color: #a5a5a5"></i>
-                    <i class="far fa-star" style="color: #a5a5a5"></i>
-                    <i class="far fa-star" style="color: #a5a5a5"></i>
-                    <i class="far fa-star" style="color: #a5a5a5"></i>
-                    <i class="far fa-star" style="color: #a5a5a5"></i>
+                  <div class="rating-icon-cont">
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
                   </div>
                 </div>
-                <p style="font-size: 18px; font-weight: 700">
+                <p class="main-head">
                   Your Review <span style="color: red">*</span> :
                 </p>
                 <textarea class="text-area"></textarea>
-                <div
-                  style="
-                    display: flex;
-                    align-items: center;
-                    gap: 10px;
-                    justify-content: space-between;
-                    margin-top: 10px;
-                  "
-                >
-                  <div style="flex-basis: 50%">
-                    <p style="font-size: 18px; margin: 0px; margin-bottom: 5px">
-                      Name <span style="color: red">*</span> :
-                    </p>
+                <div class="rating-form-wrapper">
+                  <div class="rating-form-col">
+                    <p>Name <span style="color: red">*</span> :</p>
                     <input type="text" class="input-field" />
                   </div>
-                  <div style="flex-basis: 50%">
-                    <p style="font-size: 18px; margin: 0px; margin-bottom: 5px">
-                      Email <span style="color: red">*</span> :
-                    </p>
+                  <div class="rating-form-col">
+                    <p>Email <span style="color: red">*</span> :</p>
                     <input type="text" class="input-field" />
                   </div>
                 </div>
-                <div style="margin-top: 5px">
+                <div class="rating-checkbox-cont">
                   <input type="checkbox" />
                   <span style="font-size: 18px">
                     Save my name, email, and website in this browser for the
                     next time I comment.
                   </span>
                 </div>
-                <div style="margin: 10px 0px">
-                  <button
-                    class="checkout-button"
-                    style="width: auto; padding: 10px 20px"
-                  >
+                <div class="rating-button-cont">
+                  <button class="checkout-button rating-submit-btn">
                     SUBMIT
                   </button>
                 </div>
@@ -602,8 +410,8 @@
           </div>
         </div>
       </div>
-      <!-- Security  -->
-      <div style="padding-bottom: 100px">
+      <!-- Security -->
+      <div class="security-cont">
         <img
           src="/Assets/images/Security.png"
           alt=""
@@ -611,158 +419,72 @@
         />
       </div>
       <!-- Related Items -->
-      <div style="padding-bottom: 100px">
-        <div style="max-width: 1300px; margin: 0 auto">
-          <p style="font-size: 30px">Related Items</p>
+      <div class="related-main-cont">
+        <div class="parent-max-width">
+          <p class="related-main-head">Related Items</p>
           <div class="card-container">
             <!-- First Row -->
-            <div class="f-card" style="border-radius: 0px; padding: 30px 10px">
+            <div class="f-card related-cards">
               <img src="/Assets/images/card1.png" alt="Image" />
               <div class="feature-detail">
-                <p style="margin: 0px; font-weight: 700">Rectangular Sink</p>
-                <!-- <div>
-                      rate image
-                      <img src="" alt="">
-                    </div> -->
-                <div style="display: flex; align-items: center; gap: 10px">
-                  <p
-                    style="
-                      text-decoration: line-through;
-                      color: #707070;
-                      font-weight: 700;
-                    "
-                  >
+                <p class="related-card-head">Rectangular Sink</p>
+                <div class="card-desc-cont">
+                  <p style="text-decoration: line-through" class="grey-text">
                     $235.00
                   </p>
-                  <p style="color: #1388e5; font-weight: 700">$199.00</p>
+                  <p class="blue-text">$199.00</p>
                 </div>
-                <div style="display: flex; gap: 10px">
-                  <button class="btn" style="border-radius: 0px">
-                    ADD TO CART
-                  </button>
-                  <button class="btn" style="border-radius: 0px">
-                    WISHLIST
-                  </button>
+                <div class="related-card-btn-cont">
+                  <button class="btn related-card-btn">Add To Cart</button>
+                  <button class="btn related-card-btn">WISHLIST</button>
                 </div>
               </div>
             </div>
-            <div class="f-card" style="border-radius: 0px; padding: 30px 10px">
+            <div class="f-card related-cards">
               <img src="/Assets/images/card1.png" alt="Image" />
               <div class="feature-detail">
-                <p style="margin: 0px; font-weight: 700">Rectangular Sink</p>
-                <!-- <div>
-                      rate image
-                      <img src="" alt="">
-                    </div> -->
-                <div style="display: flex; align-items: center; gap: 10px">
-                  <p
-                    style="
-                      text-decoration: line-through;
-                      color: #707070;
-                      font-weight: 700;
-                    "
-                  >
+                <p class="related-card-head">Rectangular Sink</p>
+                <div class="card-desc-cont">
+                  <p style="text-decoration: line-through" class="grey-text">
                     $235.00
                   </p>
-                  <p style="color: #1388e5; font-weight: 700">$199.00</p>
+                  <p class="blue-text">$199.00</p>
                 </div>
-                <div style="display: flex; gap: 10px">
-                  <button class="btn" style="border-radius: 0px">
-                    ADD TO CART
-                  </button>
-                  <button class="btn" style="border-radius: 0px">
-                    WISHLIST
-                  </button>
+                <div class="related-card-btn-cont">
+                  <button class="btn related-card-btn">Add To Cart</button>
+                  <button class="btn related-card-btn">WISHLIST</button>
                 </div>
               </div>
             </div>
-            <div class="f-card" style="border-radius: 0px; padding: 30px 10px">
+            <div class="f-card related-cards">
               <img src="/Assets/images/card1.png" alt="Image" />
               <div class="feature-detail">
-                <p style="margin: 0px; font-weight: 700">Rectangular Sink</p>
-                <!-- <div>
-                      rate image
-                      <img src="" alt="">
-                    </div> -->
-                <div style="display: flex; align-items: center; gap: 10px">
-                  <p
-                    style="
-                      text-decoration: line-through;
-                      color: #707070;
-                      font-weight: 700;
-                    "
-                  >
+                <p class="related-card-head">Rectangular Sink</p>
+                <div class="card-desc-cont">
+                  <p style="text-decoration: line-through" class="grey-text">
                     $235.00
                   </p>
-                  <p style="color: #1388e5; font-weight: 700">$199.00</p>
+                  <p class="blue-text">$199.00</p>
                 </div>
-                <div style="display: flex; gap: 10px">
-                  <button class="btn" style="border-radius: 0px">
-                    ADD TO CART
-                  </button>
-                  <button class="btn" style="border-radius: 0px">
-                    WISHLIST
-                  </button>
+                <div class="related-card-btn-cont">
+                  <button class="btn related-card-btn">Add To Cart</button>
+                  <button class="btn related-card-btn">WISHLIST</button>
                 </div>
               </div>
             </div>
-            <div class="f-card" style="border-radius: 0px; padding: 30px 10px">
+            <div class="f-card related-cards">
               <img src="/Assets/images/card1.png" alt="Image" />
               <div class="feature-detail">
-                <p style="margin: 0px; font-weight: 700">Rectangular Sink</p>
-                <!-- <div>
-                      rate image
-                      <img src="" alt="">
-                    </div> -->
-                <div style="display: flex; align-items: center; gap: 10px">
-                  <p
-                    style="
-                      text-decoration: line-through;
-                      color: #707070;
-                      font-weight: 700;
-                    "
-                  >
+                <p class="related-card-head">Rectangular Sink</p>
+                <div class="card-desc-cont">
+                  <p style="text-decoration: line-through" class="grey-text">
                     $235.00
                   </p>
-                  <p style="color: #1388e5; font-weight: 700">$199.00</p>
+                  <p class="blue-text">$199.00</p>
                 </div>
-                <div style="display: flex; gap: 10px">
-                  <button class="btn" style="border-radius: 0px">
-                    ADD TO CART
-                  </button>
-                  <button class="btn" style="border-radius: 0px">
-                    WISHLIST
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="f-card" style="border-radius: 0px; padding: 30px 10px">
-              <img src="/Assets/images/card1.png" alt="Image" />
-              <div class="feature-detail">
-                <p style="margin: 0px; font-weight: 700">Rectangular Sink</p>
-                <!-- <div>
-                      rate image
-                      <img src="" alt="">
-                    </div> -->
-                <div style="display: flex; align-items: center; gap: 10px">
-                  <p
-                    style="
-                      text-decoration: line-through;
-                      color: #707070;
-                      font-weight: 700;
-                    "
-                  >
-                    $235.00
-                  </p>
-                  <p style="color: #1388e5; font-weight: 700">$199.00</p>
-                </div>
-                <div style="display: flex; gap: 10px">
-                  <button class="btn" style="border-radius: 0px">
-                    ADD TO CART
-                  </button>
-                  <button class="btn" style="border-radius: 0px">
-                    WISHLIST
-                  </button>
+                <div class="related-card-btn-cont">
+                  <button class="btn related-card-btn">Add To Cart</button>
+                  <button class="btn related-card-btn">WISHLIST</button>
                 </div>
               </div>
             </div>
@@ -771,31 +493,13 @@
         </div>
       </div>
       <!-- Footer -->
-      <div style="background-color: #363434; padding: 10px">
-        <div style="margin-top: -80px">
-          <div style="max-width: 1300px; margin: 0 auto">
+      <div class="footer-main-cont">
+        <div class="subscribe-row">
+          <div class="parent-max-width">
             <div style="position: relative">
-              <div
-                style="
-                  background: linear-gradient(
-                    to bottom right,
-                    #085fa7,
-                    #1388e5
-                  );
-                  padding: 30px 100px;
-                  z-index: 200;
-                "
-              >
-                <div
-                  style="
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    gap: 50px;
-                    z-index: 100;
-                  "
-                >
-                  <div style="display: flex; align-items: center; gap: 30px">
+              <div class="subscribe-sub-row">
+                <div style="gap: 50px; z-index: 100" class="flex-cont">
+                  <div class="subscribe-col-1">
                     <img
                       src="/Assets/images/Layer_4.png"
                       alt=""
@@ -806,7 +510,7 @@
                       every week
                     </p>
                   </div>
-                  <div style="display: flex; gap: 10px">
+                  <div class="subscribe-col-1 subscribe-col-2">
                     <input
                       type="text"
                       class="email-input"
@@ -824,39 +528,16 @@
             </div>
           </div>
         </div>
-        <div
-          style="
-            height: 500px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            /* flex-direction: column; */
-            z-index: 0;
-          "
-        >
-          <div style="max-width: 1000px; margin: 0 auto">
-            <div
-              style="
-                display: grid;
-                grid-template-columns: repeat(6, 1fr) repeat(6, 1fr);
-                grid-gap: 10px;
-                z-index: 1;
-              "
-            >
-              <div style="grid-column: span 6; max-width: 450px">
+        <div class="flex-cont footer-desc-row">
+          <div class="parent-max-width">
+            <div class="footer-grid-row">
+              <div class="footer-grid-col1">
                 <img src="/Assets/images/LogoWhite.png" alt="" />
                 <p style="color: #ffffff">
                   High quality Scandinavian furniture made from eco-friendly
                   materials. Designed for modern, minimalist apartments
                 </p>
-                <div
-                  style="
-                    display: flex;
-                    align-items: center;
-                    justify-content: flex-start;
-                    gap: 10px;
-                  "
-                >
+                <div class="footer-icon-cont">
                   <img src="/Assets/images/facebook.png" alt="" />
                   <img src="/Assets/images/twitter.png" alt="" />
                   <img src="/Assets/images/linkedin (1).png" alt="" />
@@ -864,17 +545,10 @@
                   <img src="/Assets/images/youtube (1).png" alt="" />
                 </div>
               </div>
-              <div
-                style="
-                  grid-column: span 6;
-                  display: flex;
-                  justify-content: space-between;
-                  gap: 50px;
-                "
-              >
+              <div class="footer-grid-col2">
                 <div>
                   <p style="color: #ffffff">Shopping online</p>
-                  <div style="color: #aeaeae">
+                  <div class="grey-text">
                     <p>Order Status</p>
                     <p>Shipping and Delivery</p>
                     <p>Returns</p>
@@ -884,7 +558,7 @@
                 </div>
                 <div>
                   <p style="color: #ffffff">Information</p>
-                  <div style="color: #aeaeae">
+                  <div class="grey-text">
                     <p>Gift Cards</p>
                     <p>Find a store</p>
                     <p>Newsletter</p>
@@ -894,7 +568,7 @@
                 </div>
                 <div>
                   <p style="color: #ffffff">Contact</p>
-                  <div style="color: #aeaeae">
+                  <div class="grey-text">
                     <p>store@uikit.com</p>
                     <p>Hotline: +1 131 138 138</p>
                   </div>
@@ -904,11 +578,11 @@
           </div>
         </div>
         <div>
-          <hr style="border-color: #aeaeae" class="solid" />
-          <p style="color: #aeaeae; text-align: center">
+          <hr class="solid grey-border" />
+          <p style="text-align: center" class="grey-text">
             © 2022. ALL RIGHTS RESERVED.
           </p>
-          <hr style="border-color: #aeaeae" class="solid" />
+          <hr class="solid grey-border" />
         </div>
       </div>
     </div>
@@ -944,7 +618,6 @@
         }
         ele.classList.add("active");
       }
-
     </script>
   </body>
 </html>

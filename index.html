@@ -38,24 +38,10 @@
     <div>
       <!-- Header -->
       <div>
-        <div style="background-color: #1388e5">
-          <div style="max-width: 1300px; margin: 0px auto">
-            <div
-              style="
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-              "
-            >
-              <div
-                style="
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-                  gap: 5px;
-                "
-                class="lato_heavy"
-              >
+        <div class="alert-container">
+          <div class="parent-max-width">
+            <div class="flex-cont">
+              <div style="gap: 5px" class="lato_heavy flex-cont">
                 <p>CALL US:</p>
                 <p>+1 131 138 138</p>
               </div>
@@ -68,60 +54,29 @@
             </div>
           </div>
         </div>
-        <div style="max-width: 1300px; margin: 0px auto">
-          <div
-            style="
-              /* display: flex;
-              justify-content: space-between;
-              align-items: center; */
-              padding: 10px 0px;
-              display: grid;
-              grid-template-columns: repeat(12, 1fr);
-              gap: 10px;
-            "
-          >
-            <div style="grid-column: span 2">
+        <div class="parent-max-width">
+          <div class="header-grid">
+            <div id="header-grid-column-1">
               <img
                 src="./Assets/images/Logo.png"
                 alt=""
                 style="cursor: pointer; width: 160px"
               />
             </div>
-            <div class="search-container" style="grid-column: span 8">
+            <div class="search-container" id="header-grid-column-2">
               <input type="text" class="search-input" placeholder="Search" />
               <button class="search-button">Search</button>
             </div>
-            <div
-              style="
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
-                gap: 10px;
-                grid-column: span 2;
-              "
-            >
+            <div id="header-grid-column-3">
               <img src="./Assets/images/heart.png" class="icons" alt="" />
               <img src="./Assets/images/cart.png" class="icons" alt="" />
               <img src="./Assets/images/user.png" class="icons" alt="" />
             </div>
           </div>
-          <hr
-            style="margin: 0px 30px; border-color: rgba(0, 0, 0, 0.1)"
-            class="solid"
-          />
+          <hr class="solid header-line" />
         </div>
-        <div style="display: flex; justify-content: center; padding: 10px 0px">
-          <div
-            style="
-              display: flex;
-              justify-content: space-between;
-              gap: 40px;
-              font-family: Lato;
-              font-weight: 500;
-              position: relative;
-            "
-            id="nav-item-container"
-          >
+        <div class="nav-item-main">
+          <div class="flex-cont nav-item-sub" id="nav-item-container">
             <div class="dropdown">
               <p class="nav-item" onclick="myFunction()">
                 Categories
@@ -129,17 +84,7 @@
               </p>
               <div id="myDropdown" class="dropdown-content">
                 <div style="display: flex">
-                  <div
-                    style="
-                      flex-basis: 45%;
-                      background: #eff8ff 0% 0% no-repeat padding-box;
-                      display: flex;
-                      flex-direction: column;
-                      margin: 0px;
-                      padding: 0px;
-                      font-weight: 600;
-                    "
-                  >
+                  <div id="dropdown-left">
                     <div
                       class="dropdown-item selected"
                       onclick="handleDropdownItem(0)"
@@ -171,63 +116,44 @@
                       <p>Home Appliances</p>
                     </div>
                   </div>
-                  <div style="flex-basis: 55%">
-                    <div
-                      style="
-                        padding: 30px 20px;
-                        display: flex;
-                        flex-direction: column;
-                        gap: 20px;
-                      "
-                    >
-                      <div
-                        style="display: flex; align-items: center; gap: 50px"
-                      >
+                  <div id="dropdown-right">
+                    <div id="dropdown-right-sub">
+                      <div class="dropdown-right-single-item">
                         <p>ALL</p>
                         <i
                           class="fas fa-chevron-right"
                           style="color: #1388e5"
                         ></i>
                       </div>
-                      <div
-                        style="display: flex; align-items: center; gap: 50px"
-                      >
+                      <div class="dropdown-right-single-item">
                         <p>MEN</p>
                         <i
                           class="fas fa-chevron-right"
                           style="color: #1388e5"
                         ></i>
                       </div>
-                      <div
-                        style="display: flex; align-items: center; gap: 50px"
-                      >
+                      <div class="dropdown-right-single-item">
                         <p>WOMEN</p>
                         <i
                           class="fas fa-chevron-right"
                           style="color: #1388e5"
                         ></i>
                       </div>
-                      <div
-                        style="display: flex; align-items: center; gap: 50px"
-                      >
+                      <div class="dropdown-right-single-item">
                         <p>BOY</p>
                         <i
                           class="fas fa-chevron-right"
                           style="color: #1388e5"
                         ></i>
                       </div>
-                      <div
-                        style="display: flex; align-items: center; gap: 50px"
-                      >
+                      <div class="dropdown-right-single-item">
                         <p>GIRL</p>
                         <i
                           class="fas fa-chevron-right"
                           style="color: #1388e5"
                         ></i>
                       </div>
-                      <div
-                        style="display: flex; align-items: center; gap: 50px"
-                      >
+                      <div class="dropdown-right-single-item">
                         <p>BABY</p>
                         <i
                           class="fas fa-chevron-right"
@@ -247,7 +173,7 @@
         </div>
       </div>
       <!-- Banner -->
-      <div style="margin-bottom: 100px">
+      <div class="banner-cont">
         <div class="slideshow-container">
           <div class="mySlides fade">
             <img src="/Assets/images/banner.png" style="width: 100%" />
@@ -273,28 +199,12 @@
         </div>
       </div>
       <!-- Categories -->
-      <div style="padding: 50px 0px">
-        <div
-          style="
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 20px;
-          "
-          class="lato_heavy"
-        >
-          <h1 style="color: #1388e5">POPULAR</h1>
-          <h1 style="color: black">CATEGORIES</h1>
-        </div>
+      <div class="categories-cont">
+        <h1 class="categories-main-head">
+          POPULAR <span style="color: black">CATEGORIES</span>
+        </h1>
         <div>
-          <div
-            class="card-container"
-            style="
-              background: #eff8ff 0% 0% no-repeat padding-box;
-              border-radius: 0px 50px 50px 0px;
-              padding: 10px 0px;
-            "
-          >
+          <div class="categories-card-cont row-1">
             <!-- First Row -->
             <div class="card">
               <img src="/Assets/images/card1.png" alt="Image" />
@@ -318,14 +228,7 @@
             </div>
             <!-- End First Row -->
           </div>
-          <div
-            class="card-container"
-            style="
-              background: #eff8ff 0% 0% no-repeat padding-box;
-              border-radius: 50px 0px 0px 50px;
-              padding: 10px 0px;
-            "
-          >
+          <div class="categories-card-cont row-2">
             <!-- First Row -->
             <div class="card">
               <img src="/Assets/images/card1.png" alt="Image" />
@@ -351,55 +254,22 @@
       </div>
       <!-- choose use -->
       <div>
-        <div
-          style="display: flex; justify-content: center; align-items: center"
-        >
-          <p style="font-size: 40px; font-family: Lato; color: #111111">
-            Why should you choose us?
-          </p>
-        </div>
-        <div style="background-color: #0766b4">
-          <div style="max-width: 1300px; margin: 0 auto">
-            <div
-              style="
-                max-width: 1300px;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-              "
-            >
-              <div>
-                <p style="font-size: 30px; color: #ffffff">
-                  No Hard Sales, Just 5 Star Customer Service Every Step of the
-                  Way
-                </p>
-              </div>
-              <div>
-                <button
-                  class="search-button"
-                  style="
-                    border-radius: 10px;
-                    font-size: 13px;
-                    padding: 10px 15px;
-                    background-color: #363434;
-                  "
-                >
-                  SHOP NOW
-                </button>
-              </div>
+        <p class="choose-head">Why should you choose us?</p>
+        <div class="choose-sub-cont">
+          <div class="parent-max-width">
+            <div class="flex-cont">
+              <p class="choose-text">
+                No Hard Sales, Just 5 Star Customer Service Every Step of the
+                Way
+              </p>
+              <button class="search-button shop-now-btn">SHOP NOW</button>
             </div>
           </div>
         </div>
         <div class="triangle-container">
           <div class="triangle"></div>
           <div class="triangle-content">
-            <div
-              style="
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-              "
-            >
+            <div class="flex-cont">
               <div>
                 <img src="/Assets/images/fast-delivery.png" alt="" />
                 <p>Fast Shipping so You don’t have to wait around</p>
@@ -413,13 +283,7 @@
                 <p>Fast Shipping so You don’t have to wait around</p>
               </div>
             </div>
-            <div
-              style="
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-              "
-            >
+            <div class="flex-cont">
               <div>
                 <img src="/Assets/images/experience.png" alt="" />
                 <p>Fast Shipping so You don’t have to wait around</p>
@@ -433,17 +297,11 @@
         </div>
       </div>
       <!-- Featured Products -->
-      <div style="padding: 50px 0px">
-        <div style="max-width: 1200px; margin: 0 auto">
-          <div
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: space-between;
-            "
-          >
+      <div class="feature-cont">
+        <div class="parent-max-width2">
+          <div class="flex-cont">
             <div>
-              <p style="font-size: 20px">Featured Products</p>
+              <p class="feature-main-head">Featured Products</p>
             </div>
             <div class="tabs">
               <div class="tab selected" onclick="selectTab(0,'new')">NEW</div>
@@ -452,25 +310,22 @@
             </div>
           </div>
         </div>
-        <div style="margin-top: 30px">
+        <div class="feature-content-wrapper">
           <div id="new" style="display: block">
             <div class="card-container">
               <!-- First Row -->
-              <div
-                class="f-card"
-                style="border-radius: 0px; padding: 30px 10px"
-              >
+              <div class="f-card feature-card">
                 <img src="/Assets/images/card1.png" alt="Image" />
                 <div class="feature-detail">
-                  <p style="margin: 0px; font-weight: 700">Rectangular Sink</p>
-                  <div style="font-size: 20px; margin: 5px 0px; color: #ffd60c">
+                  <p class="feature-card-head">Rectangular Sink</p>
+                  <div class="feature-rating-cont feature-rating-cont-yellow">
                     <i class="fas fa-star star"></i>
                     <i class="fas fa-star star"></i>
                     <i class="fas fa-star star"></i>
                     <i class="fas fa-star star"></i>
                     <i class="fas fa-star star"></i>
                   </div>
-                  <div style="display: flex; align-items: center; gap: 10px">
+                  <div class="feature-content-cont">
                     <p
                       style="
                         text-decoration: line-through;
@@ -481,37 +336,26 @@
                     >
                       $235.00
                     </p>
-                    <p
-                      style="color: #1388e5; font-weight: 700; margin-top: 0px"
-                    >
-                      $199.00
-                    </p>
+                    <p class="feature-card-price">$199.00</p>
                   </div>
-                  <div style="display: flex; gap: 10px">
-                    <button class="btn" style="border-radius: 0px">
-                      ADD TO CART
-                    </button>
-                    <button class="btn" style="border-radius: 0px">
-                      WISHLIST
-                    </button>
+                  <div class="feature-btn-cont">
+                    <button class="btn">ADD TO CART</button>
+                    <button class="btn">WISHLIST</button>
                   </div>
                 </div>
               </div>
-              <div
-                class="f-card"
-                style="border-radius: 0px; padding: 30px 10px"
-              >
+              <div class="f-card feature-card">
                 <img src="/Assets/images/card1.png" alt="Image" />
                 <div class="feature-detail">
-                  <p style="margin: 0px; font-weight: 700">Rectangular Sink</p>
-                  <div style="font-size: 20px; margin: 5px 0px">
+                  <p class="feature-card-head">Rectangular Sink</p>
+                  <div class="feature-rating-cont">
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                   </div>
-                  <div style="display: flex; align-items: center; gap: 10px">
+                  <div class="feature-content-cont">
                     <p
                       style="
                         text-decoration: line-through;
@@ -522,37 +366,26 @@
                     >
                       $235.00
                     </p>
-                    <p
-                      style="color: #1388e5; font-weight: 700; margin-top: 0px"
-                    >
-                      $199.00
-                    </p>
+                    <p class="feature-card-price">$199.00</p>
                   </div>
-                  <div style="display: flex; gap: 10px">
-                    <button class="btn" style="border-radius: 0px">
-                      ADD TO CART
-                    </button>
-                    <button class="btn" style="border-radius: 0px">
-                      WISHLIST
-                    </button>
+                  <div class="feature-btn-cont">
+                    <button class="btn">ADD TO CART</button>
+                    <button class="btn">WISHLIST</button>
                   </div>
                 </div>
               </div>
-              <div
-                class="f-card"
-                style="border-radius: 0px; padding: 30px 10px"
-              >
+              <div class="f-card feature-card">
                 <img src="/Assets/images/card1.png" alt="Image" />
                 <div class="feature-detail">
-                  <p style="margin: 0px; font-weight: 700">Rectangular Sink</p>
-                  <div style="font-size: 20px; margin: 5px 0px">
+                  <p class="feature-card-head">Rectangular Sink</p>
+                  <div class="feature-rating-cont">
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                   </div>
-                  <div style="display: flex; align-items: center; gap: 10px">
+                  <div class="feature-content-cont">
                     <p
                       style="
                         text-decoration: line-through;
@@ -563,37 +396,26 @@
                     >
                       $235.00
                     </p>
-                    <p
-                      style="color: #1388e5; font-weight: 700; margin-top: 0px"
-                    >
-                      $199.00
-                    </p>
+                    <p class="feature-card-price">$199.00</p>
                   </div>
-                  <div style="display: flex; gap: 10px">
-                    <button class="btn" style="border-radius: 0px">
-                      ADD TO CART
-                    </button>
-                    <button class="btn" style="border-radius: 0px">
-                      WISHLIST
-                    </button>
+                  <div class="feature-btn-cont">
+                    <button class="btn">ADD TO CART</button>
+                    <button class="btn">WISHLIST</button>
                   </div>
                 </div>
               </div>
-              <div
-                class="f-card"
-                style="border-radius: 0px; padding: 30px 10px"
-              >
+              <div class="f-card feature-card">
                 <img src="/Assets/images/card1.png" alt="Image" />
                 <div class="feature-detail">
-                  <p style="margin: 0px; font-weight: 700">Rectangular Sink</p>
-                  <div style="font-size: 20px; margin: 5px 0px">
+                  <p class="feature-card-head">Rectangular Sink</p>
+                  <div class="feature-rating-cont">
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                   </div>
-                  <div style="display: flex; align-items: center; gap: 10px">
+                  <div class="feature-content-cont">
                     <p
                       style="
                         text-decoration: line-through;
@@ -604,19 +426,11 @@
                     >
                       $235.00
                     </p>
-                    <p
-                      style="color: #1388e5; font-weight: 700; margin-top: 0px"
-                    >
-                      $199.00
-                    </p>
+                    <p class="feature-card-price">$199.00</p>
                   </div>
-                  <div style="display: flex; gap: 10px">
-                    <button class="btn" style="border-radius: 0px">
-                      ADD TO CART
-                    </button>
-                    <button class="btn" style="border-radius: 0px">
-                      WISHLIST
-                    </button>
+                  <div class="feature-btn-cont">
+                    <button class="btn">ADD TO CART</button>
+                    <button class="btn">WISHLIST</button>
                   </div>
                 </div>
               </div>
@@ -624,21 +438,18 @@
             </div>
             <div class="card-container">
               <!-- First Row -->
-              <div
-                class="f-card"
-                style="border-radius: 0px; padding: 30px 10px"
-              >
+              <div class="f-card feature-card">
                 <img src="/Assets/images/card1.png" alt="Image" />
                 <div class="feature-detail">
-                  <p style="margin: 0px; font-weight: 700">Rectangular Sink</p>
-                  <div style="font-size: 20px; margin: 5px 0px; color: #ffd60c">
+                  <p class="feature-card-head">Rectangular Sink</p>
+                  <div class="feature-rating-cont feature-rating-cont-yellow">
                     <i class="fas fa-star star"></i>
                     <i class="fas fa-star star"></i>
                     <i class="fas fa-star star"></i>
                     <i class="fas fa-star star"></i>
                     <i class="fas fa-star star"></i>
                   </div>
-                  <div style="display: flex; align-items: center; gap: 10px">
+                  <div class="feature-content-cont">
                     <p
                       style="
                         text-decoration: line-through;
@@ -649,37 +460,26 @@
                     >
                       $235.00
                     </p>
-                    <p
-                      style="color: #1388e5; font-weight: 700; margin-top: 0px"
-                    >
-                      $199.00
-                    </p>
+                    <p class="feature-card-price">$199.00</p>
                   </div>
-                  <div style="display: flex; gap: 10px">
-                    <button class="btn" style="border-radius: 0px">
-                      ADD TO CART
-                    </button>
-                    <button class="btn" style="border-radius: 0px">
-                      WISHLIST
-                    </button>
+                  <div class="feature-btn-cont">
+                    <button class="btn">ADD TO CART</button>
+                    <button class="btn">WISHLIST</button>
                   </div>
                 </div>
               </div>
-              <div
-                class="f-card"
-                style="border-radius: 0px; padding: 30px 10px"
-              >
+              <div class="f-card feature-card">
                 <img src="/Assets/images/card1.png" alt="Image" />
                 <div class="feature-detail">
-                  <p style="margin: 0px; font-weight: 700">Rectangular Sink</p>
-                  <div style="font-size: 20px; margin: 5px 0px">
+                  <p class="feature-card-head">Rectangular Sink</p>
+                  <div class="feature-rating-cont">
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                   </div>
-                  <div style="display: flex; align-items: center; gap: 10px">
+                  <div class="feature-content-cont">
                     <p
                       style="
                         text-decoration: line-through;
@@ -690,37 +490,26 @@
                     >
                       $235.00
                     </p>
-                    <p
-                      style="color: #1388e5; font-weight: 700; margin-top: 0px"
-                    >
-                      $199.00
-                    </p>
+                    <p class="feature-card-price">$199.00</p>
                   </div>
-                  <div style="display: flex; gap: 10px">
-                    <button class="btn" style="border-radius: 0px">
-                      ADD TO CART
-                    </button>
-                    <button class="btn" style="border-radius: 0px">
-                      WISHLIST
-                    </button>
+                  <div class="feature-btn-cont">
+                    <button class="btn">ADD TO CART</button>
+                    <button class="btn">WISHLIST</button>
                   </div>
                 </div>
               </div>
-              <div
-                class="f-card"
-                style="border-radius: 0px; padding: 30px 10px"
-              >
+              <div class="f-card feature-card">
                 <img src="/Assets/images/card1.png" alt="Image" />
                 <div class="feature-detail">
-                  <p style="margin: 0px; font-weight: 700">Rectangular Sink</p>
-                  <div style="font-size: 20px; margin: 5px 0px">
+                  <p class="feature-card-head">Rectangular Sink</p>
+                  <div class="feature-rating-cont">
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                   </div>
-                  <div style="display: flex; align-items: center; gap: 10px">
+                  <div class="feature-content-cont">
                     <p
                       style="
                         text-decoration: line-through;
@@ -731,37 +520,26 @@
                     >
                       $235.00
                     </p>
-                    <p
-                      style="color: #1388e5; font-weight: 700; margin-top: 0px"
-                    >
-                      $199.00
-                    </p>
+                    <p class="feature-card-price">$199.00</p>
                   </div>
-                  <div style="display: flex; gap: 10px">
-                    <button class="btn" style="border-radius: 0px">
-                      ADD TO CART
-                    </button>
-                    <button class="btn" style="border-radius: 0px">
-                      WISHLIST
-                    </button>
+                  <div class="feature-btn-cont">
+                    <button class="btn">ADD TO CART</button>
+                    <button class="btn">WISHLIST</button>
                   </div>
                 </div>
               </div>
-              <div
-                class="f-card"
-                style="border-radius: 0px; padding: 30px 10px"
-              >
+              <div class="f-card feature-card">
                 <img src="/Assets/images/card1.png" alt="Image" />
                 <div class="feature-detail">
-                  <p style="margin: 0px; font-weight: 700">Rectangular Sink</p>
-                  <div style="font-size: 20px; margin: 5px 0px">
+                  <p class="feature-card-head">Rectangular Sink</p>
+                  <div class="feature-rating-cont">
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                   </div>
-                  <div style="display: flex; align-items: center; gap: 10px">
+                  <div class="feature-content-cont">
                     <p
                       style="
                         text-decoration: line-through;
@@ -772,19 +550,11 @@
                     >
                       $235.00
                     </p>
-                    <p
-                      style="color: #1388e5; font-weight: 700; margin-top: 0px"
-                    >
-                      $199.00
-                    </p>
+                    <p class="feature-card-price">$199.00</p>
                   </div>
-                  <div style="display: flex; gap: 10px">
-                    <button class="btn" style="border-radius: 0px">
-                      ADD TO CART
-                    </button>
-                    <button class="btn" style="border-radius: 0px">
-                      WISHLIST
-                    </button>
+                  <div class="feature-btn-cont">
+                    <button class="btn">ADD TO CART</button>
+                    <button class="btn">WISHLIST</button>
                   </div>
                 </div>
               </div>
@@ -794,21 +564,18 @@
           <div id="feature" style="display: none">
             <div class="card-container">
               <!-- First Row -->
-              <div
-                class="f-card"
-                style="border-radius: 0px; padding: 30px 10px"
-              >
+              <div class="f-card feature-card">
                 <img src="/Assets/images/card1.png" alt="Image" />
                 <div class="feature-detail">
-                  <p style="margin: 0px; font-weight: 700">Rectangular Sink</p>
-                  <div style="font-size: 20px; margin: 5px 0px; color: #ffd60c">
+                  <p class="feature-card-head">Rectangular Sink</p>
+                  <div class="feature-rating-cont feature-rating-cont-yellow">
                     <i class="fas fa-star star"></i>
                     <i class="fas fa-star star"></i>
                     <i class="fas fa-star star"></i>
                     <i class="fas fa-star star"></i>
                     <i class="fas fa-star star"></i>
                   </div>
-                  <div style="display: flex; align-items: center; gap: 10px">
+                  <div class="feature-content-cont">
                     <p
                       style="
                         text-decoration: line-through;
@@ -819,37 +586,26 @@
                     >
                       $235.00
                     </p>
-                    <p
-                      style="color: #1388e5; font-weight: 700; margin-top: 0px"
-                    >
-                      $199.00
-                    </p>
+                    <p class="feature-card-price">$199.00</p>
                   </div>
-                  <div style="display: flex; gap: 10px">
-                    <button class="btn" style="border-radius: 0px">
-                      ADD TO CART
-                    </button>
-                    <button class="btn" style="border-radius: 0px">
-                      WISHLIST
-                    </button>
+                  <div class="feature-btn-cont">
+                    <button class="btn">ADD TO CART</button>
+                    <button class="btn">WISHLIST</button>
                   </div>
                 </div>
               </div>
-              <div
-                class="f-card"
-                style="border-radius: 0px; padding: 30px 10px"
-              >
+              <div class="f-card feature-card">
                 <img src="/Assets/images/card1.png" alt="Image" />
                 <div class="feature-detail">
-                  <p style="margin: 0px; font-weight: 700">Rectangular Sink</p>
-                  <div style="font-size: 20px; margin: 5px 0px">
+                  <p class="feature-card-head">Rectangular Sink</p>
+                  <div class="feature-rating-cont">
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                   </div>
-                  <div style="display: flex; align-items: center; gap: 10px">
+                  <div class="feature-content-cont">
                     <p
                       style="
                         text-decoration: line-through;
@@ -860,37 +616,26 @@
                     >
                       $235.00
                     </p>
-                    <p
-                      style="color: #1388e5; font-weight: 700; margin-top: 0px"
-                    >
-                      $199.00
-                    </p>
+                    <p class="feature-card-price">$199.00</p>
                   </div>
-                  <div style="display: flex; gap: 10px">
-                    <button class="btn" style="border-radius: 0px">
-                      ADD TO CART
-                    </button>
-                    <button class="btn" style="border-radius: 0px">
-                      WISHLIST
-                    </button>
+                  <div class="feature-btn-cont">
+                    <button class="btn">ADD TO CART</button>
+                    <button class="btn">WISHLIST</button>
                   </div>
                 </div>
               </div>
-              <div
-                class="f-card"
-                style="border-radius: 0px; padding: 30px 10px"
-              >
+              <div class="f-card feature-card">
                 <img src="/Assets/images/card1.png" alt="Image" />
                 <div class="feature-detail">
-                  <p style="margin: 0px; font-weight: 700">Rectangular Sink</p>
-                  <div style="font-size: 20px; margin: 5px 0px">
+                  <p class="feature-card-head">Rectangular Sink</p>
+                  <div class="feature-rating-cont">
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                   </div>
-                  <div style="display: flex; align-items: center; gap: 10px">
+                  <div class="feature-content-cont">
                     <p
                       style="
                         text-decoration: line-through;
@@ -901,37 +646,26 @@
                     >
                       $235.00
                     </p>
-                    <p
-                      style="color: #1388e5; font-weight: 700; margin-top: 0px"
-                    >
-                      $199.00
-                    </p>
+                    <p class="feature-card-price">$199.00</p>
                   </div>
-                  <div style="display: flex; gap: 10px">
-                    <button class="btn" style="border-radius: 0px">
-                      ADD TO CART
-                    </button>
-                    <button class="btn" style="border-radius: 0px">
-                      WISHLIST
-                    </button>
+                  <div class="feature-btn-cont">
+                    <button class="btn">ADD TO CART</button>
+                    <button class="btn">WISHLIST</button>
                   </div>
                 </div>
               </div>
-              <div
-                class="f-card"
-                style="border-radius: 0px; padding: 30px 10px"
-              >
+              <div class="f-card feature-card">
                 <img src="/Assets/images/card1.png" alt="Image" />
                 <div class="feature-detail">
-                  <p style="margin: 0px; font-weight: 700">Rectangular Sink</p>
-                  <div style="font-size: 20px; margin: 5px 0px">
+                  <p class="feature-card-head">Rectangular Sink</p>
+                  <div class="feature-rating-cont">
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                   </div>
-                  <div style="display: flex; align-items: center; gap: 10px">
+                  <div class="feature-content-cont">
                     <p
                       style="
                         text-decoration: line-through;
@@ -942,19 +676,11 @@
                     >
                       $235.00
                     </p>
-                    <p
-                      style="color: #1388e5; font-weight: 700; margin-top: 0px"
-                    >
-                      $199.00
-                    </p>
+                    <p class="feature-card-price">$199.00</p>
                   </div>
-                  <div style="display: flex; gap: 10px">
-                    <button class="btn" style="border-radius: 0px">
-                      ADD TO CART
-                    </button>
-                    <button class="btn" style="border-radius: 0px">
-                      WISHLIST
-                    </button>
+                  <div class="feature-btn-cont">
+                    <button class="btn">ADD TO CART</button>
+                    <button class="btn">WISHLIST</button>
                   </div>
                 </div>
               </div>
@@ -962,21 +688,18 @@
             </div>
             <div class="card-container">
               <!-- First Row -->
-              <div
-                class="f-card"
-                style="border-radius: 0px; padding: 30px 10px"
-              >
+              <div class="f-card feature-card">
                 <img src="/Assets/images/card1.png" alt="Image" />
                 <div class="feature-detail">
-                  <p style="margin: 0px; font-weight: 700">Rectangular Sink</p>
-                  <div style="font-size: 20px; margin: 5px 0px; color: #ffd60c">
+                  <p class="feature-card-head">Rectangular Sink</p>
+                  <div class="feature-rating-cont feature-rating-cont-yellow">
                     <i class="fas fa-star star"></i>
                     <i class="fas fa-star star"></i>
                     <i class="fas fa-star star"></i>
                     <i class="fas fa-star star"></i>
                     <i class="fas fa-star star"></i>
                   </div>
-                  <div style="display: flex; align-items: center; gap: 10px">
+                  <div class="feature-content-cont">
                     <p
                       style="
                         text-decoration: line-through;
@@ -987,37 +710,26 @@
                     >
                       $235.00
                     </p>
-                    <p
-                      style="color: #1388e5; font-weight: 700; margin-top: 0px"
-                    >
-                      $199.00
-                    </p>
+                    <p class="feature-card-price">$199.00</p>
                   </div>
-                  <div style="display: flex; gap: 10px">
-                    <button class="btn" style="border-radius: 0px">
-                      ADD TO CART
-                    </button>
-                    <button class="btn" style="border-radius: 0px">
-                      WISHLIST
-                    </button>
+                  <div class="feature-btn-cont">
+                    <button class="btn">ADD TO CART</button>
+                    <button class="btn">WISHLIST</button>
                   </div>
                 </div>
               </div>
-              <div
-                class="f-card"
-                style="border-radius: 0px; padding: 30px 10px"
-              >
+              <div class="f-card feature-card">
                 <img src="/Assets/images/card1.png" alt="Image" />
                 <div class="feature-detail">
-                  <p style="margin: 0px; font-weight: 700">Rectangular Sink</p>
-                  <div style="font-size: 20px; margin: 5px 0px">
+                  <p class="feature-card-head">Rectangular Sink</p>
+                  <div class="feature-rating-cont">
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                   </div>
-                  <div style="display: flex; align-items: center; gap: 10px">
+                  <div class="feature-content-cont">
                     <p
                       style="
                         text-decoration: line-through;
@@ -1028,37 +740,26 @@
                     >
                       $235.00
                     </p>
-                    <p
-                      style="color: #1388e5; font-weight: 700; margin-top: 0px"
-                    >
-                      $199.00
-                    </p>
+                    <p class="feature-card-price">$199.00</p>
                   </div>
-                  <div style="display: flex; gap: 10px">
-                    <button class="btn" style="border-radius: 0px">
-                      ADD TO CART
-                    </button>
-                    <button class="btn" style="border-radius: 0px">
-                      WISHLIST
-                    </button>
+                  <div class="feature-btn-cont">
+                    <button class="btn">ADD TO CART</button>
+                    <button class="btn">WISHLIST</button>
                   </div>
                 </div>
               </div>
-              <div
-                class="f-card"
-                style="border-radius: 0px; padding: 30px 10px"
-              >
+              <div class="f-card feature-card">
                 <img src="/Assets/images/card1.png" alt="Image" />
                 <div class="feature-detail">
-                  <p style="margin: 0px; font-weight: 700">Rectangular Sink</p>
-                  <div style="font-size: 20px; margin: 5px 0px">
+                  <p class="feature-card-head">Rectangular Sink</p>
+                  <div class="feature-rating-cont">
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                   </div>
-                  <div style="display: flex; align-items: center; gap: 10px">
+                  <div class="feature-content-cont">
                     <p
                       style="
                         text-decoration: line-through;
@@ -1069,19 +770,11 @@
                     >
                       $235.00
                     </p>
-                    <p
-                      style="color: #1388e5; font-weight: 700; margin-top: 0px"
-                    >
-                      $199.00
-                    </p>
+                    <p class="feature-card-price">$199.00</p>
                   </div>
-                  <div style="display: flex; gap: 10px">
-                    <button class="btn" style="border-radius: 0px">
-                      ADD TO CART
-                    </button>
-                    <button class="btn" style="border-radius: 0px">
-                      WISHLIST
-                    </button>
+                  <div class="feature-btn-cont">
+                    <button class="btn">ADD TO CART</button>
+                    <button class="btn">WISHLIST</button>
                   </div>
                 </div>
               </div>
@@ -1091,21 +784,18 @@
           <div id="top" style="display: none">
             <div class="card-container">
               <!-- First Row -->
-              <div
-                class="f-card"
-                style="border-radius: 0px; padding: 30px 10px"
-              >
+              <div class="f-card feature-card">
                 <img src="/Assets/images/card1.png" alt="Image" />
                 <div class="feature-detail">
-                  <p style="margin: 0px; font-weight: 700">Rectangular Sink</p>
-                  <div style="font-size: 20px; margin: 5px 0px; color: #ffd60c">
+                  <p class="feature-card-head">Rectangular Sink</p>
+                  <div class="feature-rating-cont feature-rating-cont-yellow">
                     <i class="fas fa-star star"></i>
                     <i class="fas fa-star star"></i>
                     <i class="fas fa-star star"></i>
                     <i class="fas fa-star star"></i>
                     <i class="fas fa-star star"></i>
                   </div>
-                  <div style="display: flex; align-items: center; gap: 10px">
+                  <div class="feature-content-cont">
                     <p
                       style="
                         text-decoration: line-through;
@@ -1116,37 +806,26 @@
                     >
                       $235.00
                     </p>
-                    <p
-                      style="color: #1388e5; font-weight: 700; margin-top: 0px"
-                    >
-                      $199.00
-                    </p>
+                    <p class="feature-card-price">$199.00</p>
                   </div>
-                  <div style="display: flex; gap: 10px">
-                    <button class="btn" style="border-radius: 0px">
-                      ADD TO CART
-                    </button>
-                    <button class="btn" style="border-radius: 0px">
-                      WISHLIST
-                    </button>
+                  <div class="feature-btn-cont">
+                    <button class="btn">ADD TO CART</button>
+                    <button class="btn">WISHLIST</button>
                   </div>
                 </div>
               </div>
-              <div
-                class="f-card"
-                style="border-radius: 0px; padding: 30px 10px"
-              >
+              <div class="f-card feature-card">
                 <img src="/Assets/images/card1.png" alt="Image" />
                 <div class="feature-detail">
-                  <p style="margin: 0px; font-weight: 700">Rectangular Sink</p>
-                  <div style="font-size: 20px; margin: 5px 0px">
+                  <p class="feature-card-head">Rectangular Sink</p>
+                  <div class="feature-rating-cont">
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                   </div>
-                  <div style="display: flex; align-items: center; gap: 10px">
+                  <div class="feature-content-cont">
                     <p
                       style="
                         text-decoration: line-through;
@@ -1157,37 +836,26 @@
                     >
                       $235.00
                     </p>
-                    <p
-                      style="color: #1388e5; font-weight: 700; margin-top: 0px"
-                    >
-                      $199.00
-                    </p>
+                    <p class="feature-card-price">$199.00</p>
                   </div>
-                  <div style="display: flex; gap: 10px">
-                    <button class="btn" style="border-radius: 0px">
-                      ADD TO CART
-                    </button>
-                    <button class="btn" style="border-radius: 0px">
-                      WISHLIST
-                    </button>
+                  <div class="feature-btn-cont">
+                    <button class="btn">ADD TO CART</button>
+                    <button class="btn">WISHLIST</button>
                   </div>
                 </div>
               </div>
-              <div
-                class="f-card"
-                style="border-radius: 0px; padding: 30px 10px"
-              >
+              <div class="f-card feature-card">
                 <img src="/Assets/images/card1.png" alt="Image" />
                 <div class="feature-detail">
-                  <p style="margin: 0px; font-weight: 700">Rectangular Sink</p>
-                  <div style="font-size: 20px; margin: 5px 0px">
+                  <p class="feature-card-head">Rectangular Sink</p>
+                  <div class="feature-rating-cont">
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                   </div>
-                  <div style="display: flex; align-items: center; gap: 10px">
+                  <div class="feature-content-cont">
                     <p
                       style="
                         text-decoration: line-through;
@@ -1198,37 +866,26 @@
                     >
                       $235.00
                     </p>
-                    <p
-                      style="color: #1388e5; font-weight: 700; margin-top: 0px"
-                    >
-                      $199.00
-                    </p>
+                    <p class="feature-card-price">$199.00</p>
                   </div>
-                  <div style="display: flex; gap: 10px">
-                    <button class="btn" style="border-radius: 0px">
-                      ADD TO CART
-                    </button>
-                    <button class="btn" style="border-radius: 0px">
-                      WISHLIST
-                    </button>
+                  <div class="feature-btn-cont">
+                    <button class="btn">ADD TO CART</button>
+                    <button class="btn">WISHLIST</button>
                   </div>
                 </div>
               </div>
-              <div
-                class="f-card"
-                style="border-radius: 0px; padding: 30px 10px"
-              >
+              <div class="f-card feature-card">
                 <img src="/Assets/images/card1.png" alt="Image" />
                 <div class="feature-detail">
-                  <p style="margin: 0px; font-weight: 700">Rectangular Sink</p>
-                  <div style="font-size: 20px; margin: 5px 0px">
+                  <p class="feature-card-head">Rectangular Sink</p>
+                  <div class="feature-rating-cont">
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                   </div>
-                  <div style="display: flex; align-items: center; gap: 10px">
+                  <div class="feature-content-cont">
                     <p
                       style="
                         text-decoration: line-through;
@@ -1239,19 +896,11 @@
                     >
                       $235.00
                     </p>
-                    <p
-                      style="color: #1388e5; font-weight: 700; margin-top: 0px"
-                    >
-                      $199.00
-                    </p>
+                    <p class="feature-card-price">$199.00</p>
                   </div>
-                  <div style="display: flex; gap: 10px">
-                    <button class="btn" style="border-radius: 0px">
-                      ADD TO CART
-                    </button>
-                    <button class="btn" style="border-radius: 0px">
-                      WISHLIST
-                    </button>
+                  <div class="feature-btn-cont">
+                    <button class="btn">ADD TO CART</button>
+                    <button class="btn">WISHLIST</button>
                   </div>
                 </div>
               </div>
@@ -1259,21 +908,18 @@
             </div>
             <div class="card-container">
               <!-- First Row -->
-              <div
-                class="f-card"
-                style="border-radius: 0px; padding: 30px 10px"
-              >
+              <div class="f-card feature-card">
                 <img src="/Assets/images/card1.png" alt="Image" />
                 <div class="feature-detail">
-                  <p style="margin: 0px; font-weight: 700">Rectangular Sink</p>
-                  <div style="font-size: 20px; margin: 5px 0px; color: #ffd60c">
+                  <p class="feature-card-head">Rectangular Sink</p>
+                  <div class="feature-rating-cont feature-rating-cont-yellow">
                     <i class="fas fa-star star"></i>
                     <i class="fas fa-star star"></i>
                     <i class="fas fa-star star"></i>
                     <i class="fas fa-star star"></i>
                     <i class="fas fa-star star"></i>
                   </div>
-                  <div style="display: flex; align-items: center; gap: 10px">
+                  <div class="feature-content-cont">
                     <p
                       style="
                         text-decoration: line-through;
@@ -1284,37 +930,26 @@
                     >
                       $235.00
                     </p>
-                    <p
-                      style="color: #1388e5; font-weight: 700; margin-top: 0px"
-                    >
-                      $199.00
-                    </p>
+                    <p class="feature-card-price">$199.00</p>
                   </div>
-                  <div style="display: flex; gap: 10px">
-                    <button class="btn" style="border-radius: 0px">
-                      ADD TO CART
-                    </button>
-                    <button class="btn" style="border-radius: 0px">
-                      WISHLIST
-                    </button>
+                  <div class="feature-btn-cont">
+                    <button class="btn">ADD TO CART</button>
+                    <button class="btn">WISHLIST</button>
                   </div>
                 </div>
               </div>
-              <div
-                class="f-card"
-                style="border-radius: 0px; padding: 30px 10px"
-              >
+              <div class="f-card feature-card">
                 <img src="/Assets/images/card1.png" alt="Image" />
                 <div class="feature-detail">
-                  <p style="margin: 0px; font-weight: 700">Rectangular Sink</p>
-                  <div style="font-size: 20px; margin: 5px 0px">
+                  <p class="feature-card-head">Rectangular Sink</p>
+                  <div class="feature-rating-cont">
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                     <i class="far fa-star" style="color: #a5a5a5"></i>
                   </div>
-                  <div style="display: flex; align-items: center; gap: 10px">
+                  <div class="feature-content-cont">
                     <p
                       style="
                         text-decoration: line-through;
@@ -1325,101 +960,11 @@
                     >
                       $235.00
                     </p>
-                    <p
-                      style="color: #1388e5; font-weight: 700; margin-top: 0px"
-                    >
-                      $199.00
-                    </p>
+                    <p class="feature-card-price">$199.00</p>
                   </div>
-                  <div style="display: flex; gap: 10px">
-                    <button class="btn" style="border-radius: 0px">
-                      ADD TO CART
-                    </button>
-                    <button class="btn" style="border-radius: 0px">
-                      WISHLIST
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="f-card"
-                style="border-radius: 0px; padding: 30px 10px"
-              >
-                <img src="/Assets/images/card1.png" alt="Image" />
-                <div class="feature-detail">
-                  <p style="margin: 0px; font-weight: 700">Rectangular Sink</p>
-                  <div style="font-size: 20px; margin: 5px 0px">
-                    <i class="far fa-star" style="color: #a5a5a5"></i>
-                    <i class="far fa-star" style="color: #a5a5a5"></i>
-                    <i class="far fa-star" style="color: #a5a5a5"></i>
-                    <i class="far fa-star" style="color: #a5a5a5"></i>
-                    <i class="far fa-star" style="color: #a5a5a5"></i>
-                  </div>
-                  <div style="display: flex; align-items: center; gap: 10px">
-                    <p
-                      style="
-                        text-decoration: line-through;
-                        color: #707070;
-                        font-weight: 700;
-                        margin-top: 0px;
-                      "
-                    >
-                      $235.00
-                    </p>
-                    <p
-                      style="color: #1388e5; font-weight: 700; margin-top: 0px"
-                    >
-                      $199.00
-                    </p>
-                  </div>
-                  <div style="display: flex; gap: 10px">
-                    <button class="btn" style="border-radius: 0px">
-                      ADD TO CART
-                    </button>
-                    <button class="btn" style="border-radius: 0px">
-                      WISHLIST
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="f-card"
-                style="border-radius: 0px; padding: 30px 10px"
-              >
-                <img src="/Assets/images/card1.png" alt="Image" />
-                <div class="feature-detail">
-                  <p style="margin: 0px; font-weight: 700">Rectangular Sink</p>
-                  <div style="font-size: 20px; margin: 5px 0px">
-                    <i class="far fa-star" style="color: #a5a5a5"></i>
-                    <i class="far fa-star" style="color: #a5a5a5"></i>
-                    <i class="far fa-star" style="color: #a5a5a5"></i>
-                    <i class="far fa-star" style="color: #a5a5a5"></i>
-                    <i class="far fa-star" style="color: #a5a5a5"></i>
-                  </div>
-                  <div style="display: flex; align-items: center; gap: 10px">
-                    <p
-                      style="
-                        text-decoration: line-through;
-                        color: #707070;
-                        font-weight: 700;
-                        margin-top: 0px;
-                      "
-                    >
-                      $235.00
-                    </p>
-                    <p
-                      style="color: #1388e5; font-weight: 700; margin-top: 0px"
-                    >
-                      $199.00
-                    </p>
-                  </div>
-                  <div style="display: flex; gap: 10px">
-                    <button class="btn" style="border-radius: 0px">
-                      ADD TO CART
-                    </button>
-                    <button class="btn" style="border-radius: 0px">
-                      WISHLIST
-                    </button>
+                  <div class="feature-btn-cont">
+                    <button class="btn">ADD TO CART</button>
+                    <button class="btn">WISHLIST</button>
                   </div>
                 </div>
               </div>
@@ -1429,19 +974,10 @@
         </div>
       </div>
       <!-- Discounted sales -->
-      <div style="max-width: 1200px; margin: 0 auto">
-        <div
-          style="
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 20px;
-          "
-          class="lato_heavy"
-        >
-          <h1 style="color: #1388e5">DISCOUNTED</h1>
-          <h1 style="color: black">SALE'S</h1>
-        </div>
+      <div class="parent-max-width2">
+        <h1 class="categories-main-head">
+          DISCOUNTED <span style="color: black">SALES</span>
+        </h1>
         <div>
           <div>
             <div class="banner-grid-container">
@@ -1467,296 +1003,236 @@
         </div>
       </div>
       <!-- PRODUCTS IN TODAY -->
-      <div style="max-width: 1300px; margin: 0 auto">
-        <div
-          style="
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 20px;
-          "
-          class="lato_heavy"
-        >
-          <h1 style="color: #1388e5">PRODUCTS</h1>
-          <h1 style="color: black">IN TODAY</h1>
-        </div>
+      <div class="parent-max-width">
+        <h1 class="categories-main-head">
+          PRODUCTS <span style="color: black">IN TODAY</span>
+        </h1>
         <div>
           <div class="slide-container swiper">
             <div class="slide-content">
               <div class="card-wrapper swiper-wrapper">
-                <div
-                  class="swiper-slide"
-                  style="
-                    border-radius: 0px;
-                    padding: 30px 10px;
-                    background: #ffffff 0% 0% no-repeat padding-box;
-                    box-shadow: 0px 3px 6px #00000029;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    flex-direction: column;
-                  "
-                >
-                  <img src="/Assets/images/card1.png" alt="Image" />
-                  <div>
-                    <p style="margin: 0px; font-weight: 700">
-                      Rectangular Sink
-                    </p>
-                    <div style="display: flex; align-items: center; gap: 10px">
-                      <p
-                        style="
-                          text-decoration: line-through;
-                          color: #707070;
-                          font-weight: 700;
-                        "
+                <div class="swiper-slide ">
+                  <div class="swiper-slider-card">
+                    <img src="/Assets/images/card1.png" alt="Image" />
+                    <div>
+                      <p class="feature-card-head">Rectangular Sink</p>
+                      <div
+                       class="feature-content-cont"
                       >
-                        $235.00
-                      </p>
-                      <p style="color: #1388e5; font-weight: 700">$199.00</p>
-                    </div>
-                    <div style="display: flex; gap: 10px">
-                      <button
-                        class="btn"
-                        style="border-radius: 0px; padding: 8px 5px"
-                      >
-                        ADD TO CART
-                      </button>
-                      <button
-                        class="btn"
-                        style="border-radius: 0px; padding: 8px 5px"
-                      >
-                        WISHLIST
-                      </button>
+                        <p class="feature-card-price">$199.00</p>
+                      </div>
+                      <div class="feature-btn-cont">
+                        <button
+                          class="btn"
+                        >
+                          ADD TO CART
+                        </button>
+                        <button
+                          class="btn"
+                        >
+                          WISHLIST
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div
-                  class="swiper-slide"
-                  style="
-                    border-radius: 0px;
-                    padding: 30px 10px;
-                    background: #ffffff 0% 0% no-repeat padding-box;
-                    box-shadow: 0px 3px 6px #00000029;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    flex-direction: column;
-                  "
-                >
-                  <img src="/Assets/images/card1.png" alt="Image" />
-                  <div>
-                    <p style="margin: 0px; font-weight: 700">
-                      Rectangular Sink
-                    </p>
-                    <div style="display: flex; align-items: center; gap: 10px">
-                      <p
-                        style="
-                          text-decoration: line-through;
-                          color: #707070;
-                          font-weight: 700;
-                        "
+                <div class="swiper-slide ">
+                  <div class="swiper-slider-card">
+                    <img src="/Assets/images/card1.png" alt="Image" />
+                    <div>
+                      <p class="feature-card-head">Rectangular Sink</p>
+                      <div
+                       class="feature-content-cont"
                       >
-                        $235.00
-                      </p>
-                      <p style="color: #1388e5; font-weight: 700">$199.00</p>
-                    </div>
-                    <div style="display: flex; gap: 10px">
-                      <button
-                        class="btn"
-                        style="border-radius: 0px; padding: 8px 5px"
-                      >
-                        ADD TO CART
-                      </button>
-                      <button
-                        class="btn"
-                        style="border-radius: 0px; padding: 8px 5px"
-                      >
-                        WISHLIST
-                      </button>
+                        <p class="feature-card-price">$199.00</p>
+                      </div>
+                      <div class="feature-btn-cont">
+                        <button
+                          class="btn"
+                        >
+                          ADD TO CART
+                        </button>
+                        <button
+                          class="btn"
+                        >
+                          WISHLIST
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div
-                  class="swiper-slide"
-                  style="
-                    border-radius: 0px;
-                    padding: 30px 10px;
-                    background: #ffffff 0% 0% no-repeat padding-box;
-                    box-shadow: 0px 3px 6px #00000029;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    flex-direction: column;
-                  "
-                >
-                  <img src="/Assets/images/card1.png" alt="Image" />
-                  <div>
-                    <p style="margin: 0px; font-weight: 700">
-                      Rectangular Sink
-                    </p>
-                    <div style="display: flex; align-items: center; gap: 10px">
-                      <p
-                        style="
-                          text-decoration: line-through;
-                          color: #707070;
-                          font-weight: 700;
-                        "
+                <div class="swiper-slide ">
+                  <div class="swiper-slider-card">
+                    <img src="/Assets/images/card1.png" alt="Image" />
+                    <div>
+                      <p class="feature-card-head">Rectangular Sink</p>
+                      <div
+                       class="feature-content-cont"
                       >
-                        $235.00
-                      </p>
-                      <p style="color: #1388e5; font-weight: 700">$199.00</p>
-                    </div>
-                    <div style="display: flex; gap: 10px">
-                      <button
-                        class="btn"
-                        style="border-radius: 0px; padding: 8px 5px"
-                      >
-                        ADD TO CART
-                      </button>
-                      <button
-                        class="btn"
-                        style="border-radius: 0px; padding: 8px 5px"
-                      >
-                        WISHLIST
-                      </button>
+                        <p class="feature-card-price">$199.00</p>
+                      </div>
+                      <div class="feature-btn-cont">
+                        <button
+                          class="btn"
+                        >
+                          ADD TO CART
+                        </button>
+                        <button
+                          class="btn"
+                        >
+                          WISHLIST
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div
-                  class="swiper-slide"
-                  style="
-                    border-radius: 0px;
-                    padding: 30px 10px;
-                    background: #ffffff 0% 0% no-repeat padding-box;
-                    box-shadow: 0px 3px 6px #00000029;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    flex-direction: column;
-                  "
-                >
-                  <img src="/Assets/images/card1.png" alt="Image" />
-                  <div>
-                    <p style="margin: 0px; font-weight: 700">
-                      Rectangular Sink
-                    </p>
-                    <div style="display: flex; align-items: center; gap: 10px">
-                      <p
-                        style="
-                          text-decoration: line-through;
-                          color: #707070;
-                          font-weight: 700;
-                        "
+                <div class="swiper-slide ">
+                  <div class="swiper-slider-card">
+                    <img src="/Assets/images/card1.png" alt="Image" />
+                    <div>
+                      <p class="feature-card-head">Rectangular Sink</p>
+                      <div
+                       class="feature-content-cont"
                       >
-                        $235.00
-                      </p>
-                      <p style="color: #1388e5; font-weight: 700">$199.00</p>
-                    </div>
-                    <div style="display: flex; gap: 10px">
-                      <button
-                        class="btn"
-                        style="border-radius: 0px; padding: 8px 5px"
-                      >
-                        ADD TO CART
-                      </button>
-                      <button
-                        class="btn"
-                        style="border-radius: 0px; padding: 8px 5px"
-                      >
-                        WISHLIST
-                      </button>
+                        <p class="feature-card-price">$199.00</p>
+                      </div>
+                      <div class="feature-btn-cont">
+                        <button
+                          class="btn"
+                        >
+                          ADD TO CART
+                        </button>
+                        <button
+                          class="btn"
+                        >
+                          WISHLIST
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div
-                  class="swiper-slide"
-                  style="
-                    border-radius: 0px;
-                    padding: 30px 10px;
-                    background: #ffffff 0% 0% no-repeat padding-box;
-                    box-shadow: 0px 3px 6px #00000029;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    flex-direction: column;
-                  "
-                >
-                  <img src="/Assets/images/card1.png" alt="Image" />
-                  <div>
-                    <p style="margin: 0px; font-weight: 700">
-                      Rectangular Sink
-                    </p>
-                    <div style="display: flex; align-items: center; gap: 10px">
-                      <p
-                        style="
-                          text-decoration: line-through;
-                          color: #707070;
-                          font-weight: 700;
-                        "
+                <div class="swiper-slide ">
+                  <div class="swiper-slider-card">
+                    <img src="/Assets/images/card1.png" alt="Image" />
+                    <div>
+                      <p class="feature-card-head">Rectangular Sink</p>
+                      <div
+                       class="feature-content-cont"
                       >
-                        $235.00
-                      </p>
-                      <p style="color: #1388e5; font-weight: 700">$199.00</p>
-                    </div>
-                    <div style="display: flex; gap: 10px">
-                      <button
-                        class="btn"
-                        style="border-radius: 0px; padding: 8px 5px"
-                      >
-                        ADD TO CART
-                      </button>
-                      <button
-                        class="btn"
-                        style="border-radius: 0px; padding: 8px 5px"
-                      >
-                        WISHLIST
-                      </button>
+                        <p class="feature-card-price">$199.00</p>
+                      </div>
+                      <div class="feature-btn-cont">
+                        <button
+                          class="btn"
+                        >
+                          ADD TO CART
+                        </button>
+                        <button
+                          class="btn"
+                        >
+                          WISHLIST
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div
-                  class="swiper-slide"
-                  style="
-                    border-radius: 0px;
-                    padding: 30px 10px;
-                    background: #ffffff 0% 0% no-repeat padding-box;
-                    box-shadow: 0px 3px 6px #00000029;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    flex-direction: column;
-                  "
-                >
-                  <img src="/Assets/images/card1.png" alt="Image" />
-                  <div>
-                    <p style="margin: 0px; font-weight: 700">
-                      Rectangular Sink
-                    </p>
-                    <div style="display: flex; align-items: center; gap: 10px">
-                      <p
-                        style="
-                          text-decoration: line-through;
-                          color: #707070;
-                          font-weight: 700;
-                        "
+                <div class="swiper-slide ">
+                  <div class="swiper-slider-card">
+                    <img src="/Assets/images/card1.png" alt="Image" />
+                    <div>
+                      <p class="feature-card-head">Rectangular Sink</p>
+                      <div
+                       class="feature-content-cont"
                       >
-                        $235.00
-                      </p>
-                      <p style="color: #1388e5; font-weight: 700">$199.00</p>
+                        <p class="feature-card-price">$199.00</p>
+                      </div>
+                      <div class="feature-btn-cont">
+                        <button
+                          class="btn"
+                        >
+                          ADD TO CART
+                        </button>
+                        <button
+                          class="btn"
+                        >
+                          WISHLIST
+                        </button>
+                      </div>
                     </div>
-                    <div style="display: flex; gap: 10px">
-                      <button
-                        class="btn"
-                        style="border-radius: 0px; padding: 8px 5px"
+                  </div>
+                </div>
+                <div class="swiper-slide ">
+                  <div class="swiper-slider-card">
+                    <img src="/Assets/images/card1.png" alt="Image" />
+                    <div>
+                      <p class="feature-card-head">Rectangular Sink</p>
+                      <div
+                       class="feature-content-cont"
                       >
-                        ADD TO CART
-                      </button>
-                      <button
-                        class="btn"
-                        style="border-radius: 0px; padding: 8px 5px"
+                        <p class="feature-card-price">$199.00</p>
+                      </div>
+                      <div class="feature-btn-cont">
+                        <button
+                          class="btn"
+                        >
+                          ADD TO CART
+                        </button>
+                        <button
+                          class="btn"
+                        >
+                          WISHLIST
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide ">
+                  <div class="swiper-slider-card">
+                    <img src="/Assets/images/card1.png" alt="Image" />
+                    <div>
+                      <p class="feature-card-head">Rectangular Sink</p>
+                      <div
+                       class="feature-content-cont"
                       >
-                        WISHLIST
-                      </button>
+                        <p class="feature-card-price">$199.00</p>
+                      </div>
+                      <div class="feature-btn-cont">
+                        <button
+                          class="btn"
+                        >
+                          ADD TO CART
+                        </button>
+                        <button
+                          class="btn"
+                        >
+                          WISHLIST
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide ">
+                  <div class="swiper-slider-card">
+                    <img src="/Assets/images/card1.png" alt="Image" />
+                    <div>
+                      <p class="feature-card-head">Rectangular Sink</p>
+                      <div
+                       class="feature-content-cont"
+                      >
+                        <p class="feature-card-price">$199.00</p>
+                      </div>
+                      <div class="feature-btn-cont">
+                        <button
+                          class="btn"
+                        >
+                          ADD TO CART
+                        </button>
+                        <button
+                          class="btn"
+                        >
+                          WISHLIST
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -1769,19 +1245,10 @@
         </div>
       </div>
       <!-- shop by brand -->
-      <div style="margin-bottom: 10px;margin-top: 100px;">
-        <div
-          style="
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 20px;
-          "
-          class="lato_heavy"
-        >
-          <h1 style="color: #1388e5">SHOP</h1>
-          <h1 style="color: black">BY BRAND</h1>
-        </div>
+      <div class="shop-brand-cont">
+        <h1 class="categories-main-head">
+          SHOP <span style="color: black">BY BRAND</span>
+        </h1>
         <div>
           <img
             src="/Assets/images/brand.png"
@@ -1791,12 +1258,12 @@
         </div>
       </div>
       <!-- about us -->
-      <div style="background-color: #e6f4ff; height: 500px; padding-top: 50px">
+      <div class="about-us-cont">
         <div
-          style="display: flex; justify-content: center; align-items: center"
+          class="about-sub-cont"
         >
-          <div style="max-width: 1000px; margin: 0 auto">
-            <p style="font-size: 39px">About us</p>
+          <div class="parent-max-width3">
+            <p class="about-head">About us</p>
             <div>
               <p>
                 It is a long established fact that a reader will be distracted
@@ -1820,31 +1287,13 @@
         </div>
       </div>
       <!-- Footer -->
-      <div style="background-color: #363434; padding: 10px">
-        <div style="margin-top: -80px">
-          <div style="max-width: 1300px; margin: 0 auto">
+      <div class="footer-main-cont">
+        <div class="subscribe-row">
+          <div class="parent-max-width">
             <div style="position: relative">
-              <div
-                style="
-                  background: linear-gradient(
-                    to bottom right,
-                    #085fa7,
-                    #1388e5
-                  );
-                  padding: 30px 100px;
-                  z-index: 200;
-                "
-              >
-                <div
-                  style="
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    gap: 50px;
-                    z-index: 100;
-                  "
-                >
-                  <div style="display: flex; align-items: center; gap: 30px">
+              <div class="subscribe-sub-row">
+                <div style="gap: 50px; z-index: 100" class="flex-cont">
+                  <div class="subscribe-col-1">
                     <img
                       src="/Assets/images/Layer_4.png"
                       alt=""
@@ -1855,7 +1304,7 @@
                       every week
                     </p>
                   </div>
-                  <div style="display: flex; gap: 10px">
+                  <div class="subscribe-col-1 subscribe-col-2">
                     <input
                       type="text"
                       class="email-input"
@@ -1873,39 +1322,16 @@
             </div>
           </div>
         </div>
-        <div
-          style="
-            height: 500px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            /* flex-direction: column; */
-            z-index: 0;
-          "
-        >
-          <div style="max-width: 1200px; margin: 0 auto">
-            <div
-              style="
-                display: grid;
-                grid-template-columns: repeat(6, 1fr) repeat(6, 1fr);
-                grid-gap: 10px;
-                z-index: 1;
-              "
-            >
-              <div style="grid-column: span 6; max-width: 450px">
+        <div class="flex-cont footer-desc-row">
+          <div class="parent-max-width">
+            <div class="footer-grid-row">
+              <div class="footer-grid-col1">
                 <img src="/Assets/images/LogoWhite.png" alt="" />
                 <p style="color: #ffffff">
                   High quality Scandinavian furniture made from eco-friendly
                   materials. Designed for modern, minimalist apartments
                 </p>
-                <div
-                  style="
-                    display: flex;
-                    align-items: center;
-                    justify-content: flex-start;
-                    gap: 10px;
-                  "
-                >
+                <div class="footer-icon-cont">
                   <img src="/Assets/images/facebook.png" alt="" />
                   <img src="/Assets/images/twitter.png" alt="" />
                   <img src="/Assets/images/linkedin (1).png" alt="" />
@@ -1913,17 +1339,10 @@
                   <img src="/Assets/images/youtube (1).png" alt="" />
                 </div>
               </div>
-              <div
-                style="
-                  grid-column: span 6;
-                  display: flex;
-                  justify-content: space-between;
-                  gap: 50px;
-                "
-              >
+              <div class="footer-grid-col2">
                 <div>
                   <p style="color: #ffffff">Shopping online</p>
-                  <div style="color: #aeaeae">
+                  <div class="grey-text">
                     <p>Order Status</p>
                     <p>Shipping and Delivery</p>
                     <p>Returns</p>
@@ -1933,7 +1352,7 @@
                 </div>
                 <div>
                   <p style="color: #ffffff">Information</p>
-                  <div style="color: #aeaeae">
+                  <div class="grey-text">
                     <p>Gift Cards</p>
                     <p>Find a store</p>
                     <p>Newsletter</p>
@@ -1943,7 +1362,7 @@
                 </div>
                 <div>
                   <p style="color: #ffffff">Contact</p>
-                  <div style="color: #aeaeae">
+                  <div class="grey-text">
                     <p>store@uikit.com</p>
                     <p>Hotline: +1 131 138 138</p>
                   </div>
@@ -1953,11 +1372,11 @@
           </div>
         </div>
         <div>
-          <hr style="border-color: #aeaeae" class="solid" />
-          <p style="color: #aeaeae; text-align: center">
+          <hr class="solid grey-border" />
+          <p style="text-align: center" class="grey-text">
             © 2022. ALL RIGHTS RESERVED.
           </p>
-          <hr style="border-color: #aeaeae" class="solid" />
+          <hr class="solid grey-border" />
         </div>
       </div>
     </div>
