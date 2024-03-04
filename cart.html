@@ -23,6 +23,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <div>
@@ -44,26 +50,99 @@
             </div>
           </div>
         </div>
-        <div class="parent-max-width">
-          <div class="header-grid">
-            <div id="header-grid-column-1">
-              <img
-                src="./Assets/images/Logo.png"
-                alt=""
-                style="cursor: pointer; width: 160px"
-              />
+        <div class="responsive-headers">
+          <div class="parent-max-width default-header">
+            <div class="header-grid">
+              <div id="header-grid-column-1">
+                <img
+                  src="./Assets/images/Logo.png"
+                  alt=""
+                  style="cursor: pointer; width: 160px"
+                />
+              </div>
+              <div class="search-container" id="header-grid-column-2">
+                <input type="text" class="search-input" placeholder="Search" />
+                <button class="search-button">Search</button>
+              </div>
+              <div id="header-grid-column-3">
+                <img src="./Assets/images/heart.png" class="icons" alt="" />
+                <img src="./Assets/images/cart.png" class="icons" alt="" />
+                <img src="./Assets/images/user.png" class="icons" alt="" />
+              </div>
             </div>
-            <div class="search-container" id="header-grid-column-2">
-              <input type="text" class="search-input" placeholder="Search" />
-              <button class="search-button">Search</button>
-            </div>
-            <div id="header-grid-column-3">
-              <img src="./Assets/images/heart.png" class="icons" alt="" />
-              <img src="./Assets/images/cart.png" class="icons" alt="" />
-              <img src="./Assets/images/user.png" class="icons" alt="" />
-            </div>
+            <hr class="solid header-line" />
           </div>
-          <hr class="solid header-line" />
+          <div class="parent-max-width mobile-header">
+            <div class="resp-header-row">
+              <div class="resp-row1">
+                <a
+                  data-bs-toggle="offcanvas"
+                  href="#offcanvasExample"
+                  role="button"
+                  aria-controls="offcanvasExample"
+                >
+                  <i
+                    class="fas fa-stream"
+                    style="cursor: pointer; font-size: 20px"
+                  ></i>
+                </a>
+              </div>
+              <div class="resp-row-2">
+                <img
+                  src="./Assets/images/Logo.png"
+                  alt=""
+                  style="cursor: pointer"
+                />
+              </div>
+              <div class="resp-row-3">
+                <img src="./Assets/images/heart.png" class="icons" alt="" />
+                <img src="./Assets/images/cart.png" class="icons" alt="" />
+                <img src="./Assets/images/user.png" class="icons" alt="" />
+              </div>
+            </div>
+            <!--  -->
+            <div
+              class="offcanvas offcanvas-start"
+              tabindex="-1"
+              id="offcanvasExample"
+              aria-labelledby="offcanvasExampleLabel"
+            >
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
+                <button
+                  type="button"
+                  class="btn-close text-reset"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <div class="mt-3">
+                  <div class="dropdown">
+                    <p onclick="myFunction()">Categories</p>
+                    <i class="fas fa-plus"></i>
+                  </div>
+                  <p>Popular Categories</p>
+                  <p>Featured Products</p>
+                  <p>Sales</p>
+                  <p>New Products</p>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton"
+                  >
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+          </div>
         </div>
         <div class="nav-item-main">
           <div class="flex-cont nav-item-sub" id="nav-item-container">
@@ -168,69 +247,71 @@
           <div class="cart-row">
             <div class="cart-column-1">
               <p class="column-1-main-head">Shopping Cart</p>
-              <div class="desc-head-cont">
-                <div class="desc-head-1">PRODUCT DETAILS</div>
-                <div class="desc-head-2">QUANTITY</div>
-                <div class="desc-head-2">PRICE</div>
-                <div class="desc-head-2">TOTAL</div>
-              </div>
-              <div class="desc-content-cont">
-                <div class="desc-content-column1">
-                  <div class="desc-column1-img">
-                    <img
-                      style="height: auto; width: 100%"
-                      src="/Assets//images/headphone.png"
-                      alt=""
-                    />
+              <div class="table-container">
+                <div class="desc-head-cont">
+                  <div class="desc-head-1">PRODUCT DETAILS</div>
+                  <div class="desc-head-2">QUANTITY</div>
+                  <div class="desc-head-2">PRICE</div>
+                  <div class="desc-head-2">TOTAL</div>
+                </div>
+                <div class="desc-content-cont">
+                  <div class="desc-content-column1">
+                    <div class="desc-column1-img">
+                      <img
+                        style="height: auto; width: 100%"
+                        src="/Assets//images/headphone.png"
+                        alt=""
+                      />
+                    </div>
+                    <div>
+                      <p class="desc-column1-head">
+                        BEATS Solo Pro wireless headphones
+                      </p>
+                      <p style="color: #d2d2d2">
+                        Color:
+                        <span class="desc-column1-head">BLACK</span>
+                      </p>
+                      <p style="color: #d2d2d2">
+                        Size:
+                        <span class="desc-column1-head">LARGE</span>
+                      </p>
+                      <p style="color: #d2d2d2">
+                        Product Code:
+                        <span class="desc-column1-head">187548</span>
+                      </p>
+                    </div>
                   </div>
-                  <div>
-                    <p class="desc-column1-head">
-                      BEATS Solo Pro wireless headphones
-                    </p>
-                    <p style="color: #d2d2d2">
-                      Color:
-                      <span class="desc-column1-head">BLACK</span>
-                    </p>
-                    <p style="color: #d2d2d2">
-                      Size:
-                      <span class="desc-column1-head">LARGE</span>
-                    </p>
-                    <p style="color: #d2d2d2">
-                      Product Code:
-                      <span class="desc-column1-head">187548</span>
-                    </p>
-                  </div>
-                </div>
-                <div class="desc-content-column1 desc-content-column2">
-                  <input type="number" class="number-input" placeholder="0" />
-                  <a href="#" class="remove-button" style="margin-top: 10px"
-                    >Remove</a
-                  >
-                </div>
-                <div
-                  class="desc-content-column1 desc-content-column2 desc-content-column3"
-                >
-                  $665.25
-                </div>
-                <div class="desc-content-column1 desc-content-column2">
-                  <p style="color: #1388e5">$665.25</p>
-                  <div style="margin-top: 50px">
-                    <a
-                      href="#"
-                      class="remove-button"
-                      style="
-                        display: block;
-                        text-align: center;
-                        margin-bottom: 10px;
-                      "
-                      >EDIT</a
+                  <div class="desc-content-column1 desc-content-column2">
+                    <input type="number" class="number-input" placeholder="0" />
+                    <a href="#" class="remove-button" style="margin-top: 10px"
+                      >Remove</a
                     >
-                    <a href="#" class="remove-button">SAVE FOR LATER</a>
+                  </div>
+                  <div
+                    class="desc-content-column1 desc-content-column2 desc-content-column3"
+                  >
+                    $665.25
+                  </div>
+                  <div class="desc-content-column1 desc-content-column2">
+                    <p style="color: #1388e5">$665.25</p>
+                    <div style="margin-top: 50px">
+                      <a
+                        href="#"
+                        class="remove-button"
+                        style="
+                          display: block;
+                          text-align: center;
+                          margin-bottom: 10px;
+                        "
+                        >EDIT</a
+                      >
+                      <a href="#" class="remove-button">SAVE FOR LATER</a>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div>
-                <p class="remove-button">CONTINUE SHOPPING</p>
+                <div>
+                  <p class="remove-button">CONTINUE SHOPPING</p>
+                </div>
               </div>
             </div>
             <div class="cart-column-2">
@@ -284,7 +365,7 @@
           <div class="parent-max-width">
             <div style="position: relative">
               <div class="subscribe-sub-row">
-                <div style="gap: 50px; z-index: 100" class="flex-cont">
+                <div style="z-index: 100" class="flex-cont">
                   <div class="subscribe-col-1">
                     <img
                       src="/Assets/images/Layer_4.png"
@@ -361,9 +442,18 @@
                 </div>
               </div>
             </div>
+            <div class="mobile-icon">
+              <div class="footer-icon-mob-cont">
+                <img src="/Assets/images/facebook.png" alt="" />
+                <img src="/Assets/images/twitter.png" alt="" />
+                <img src="/Assets/images/linkedin (1).png" alt="" />
+                <img src="/Assets/images/instagram.png" alt="" />
+                <img src="/Assets/images/youtube (1).png" alt="" />
+              </div>
+            </div>
           </div>
         </div>
-        <div>
+        <div style="padding: 10px 20px">
           <hr class="solid grey-border" />
           <p style="text-align: center" class="grey-text">
             © 2022. ALL RIGHTS RESERVED.
@@ -372,5 +462,10 @@
         </div>
       </div>
     </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

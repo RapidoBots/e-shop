@@ -1,6 +1,6 @@
 .account-main-cont {
     margin-bottom: 100px;
-    padding: 50px 0px 80px 0px
+    padding: 50px 10px 80px 10px
 }
 
 .account-main-head {
@@ -24,7 +24,7 @@
     display: flex;
     gap: 20px;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .form-col {
@@ -38,7 +38,8 @@
 
 .checkbox-cont {
     display: flex;
-    gap: 10px
+    gap: 10px;
+    align-items: center;
 }
 
 .login-btn {
@@ -53,9 +54,6 @@
     cursor: pointer;
     font-size: 16px;
 }
-
-
-
 
 .password-input input {
     border: none;
@@ -85,4 +83,44 @@
     padding: 12px 15px;
     outline: none;
     width: 100%;
+}
+
+@media screen and (max-width: 1100px) {
+    .account-main-cont {
+        margin-bottom: 100px;
+        padding: 50px 20px 80px 20px
+    }
+    .form-sub-cont {
+        max-width: 1000px;
+        margin: 0 auto
+    }
+}
+@media screen and (max-width: 992px) {
+    .account-main-cont {
+        margin-bottom: 100px;
+        padding: 50px 20px 80px 20px
+    }
+    .form-sub-cont {
+        max-width: 800px;
+        margin: 0 auto
+    }
+}
+@media screen and (max-width: 768px) {
+    .account-main-cont {
+        margin-bottom: 100px;
+        padding: 50px 20px 20px 20px
+    }
+    .form-sub-cont {
+        max-width: 800px;
+        margin: 0 auto
+    }
+    .form-wrapper {
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+    }
+    .login-btn {
+        width: auto !important;
+        padding: 9px 20px !important
+    }
 }

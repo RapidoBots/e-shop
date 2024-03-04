@@ -10,17 +10,20 @@
 
 /* Header */
 .alert-container {
-    background-color: #1388e5
+    background-color: #1388e5;
+    padding-top: 20px;
 }
 
 .parent-max-width {
     max-width: 1300px;
     margin: 0px auto
 }
+
 .parent-max-width2 {
     max-width: 1200px;
     margin: 0px auto
 }
+
 .parent-max-width3 {
     max-width: 1000px;
     margin: 0px auto
@@ -174,7 +177,7 @@
 }
 
 .footer-desc-row {
-    height: 500px
+    height: 500px;
 }
 
 .footer-grid-row {
@@ -186,7 +189,12 @@
 
 .footer-grid-col1 {
     grid-column: span 6;
-    max-width: 450px
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
 }
 
 .footer-grid-col2 {
@@ -208,7 +216,9 @@
 }
 
 .grey-border {
-    border-color: #aeaeae
+    border-color: #aeaeae;
+    border-width: 2px;
+    border-style: solid;
 }
 
 
@@ -467,4 +477,193 @@
 
 .dropdown-content .selected {
     background-color: #1388E542;
+}
+
+.mobile-icon {
+    display: none;
+}
+
+.responsive-headers .mobile-header {
+    display: none;
+}
+.resp-row-2 img{
+    width: 120px;
+    height: auto;
+}
+
+@media screen and (max-width: 1300px) {
+    .subscribe-row .parent-max-width {
+        max-width: 1100px;
+    }
+
+    .footer-desc-row .parent-max-width {
+        max-width: 1000px;
+    }
+
+    .subscribe-sub-row {
+        padding: 30px 80px;
+    }
+
+    .alert-container .parent-max-width {
+        max-width: 1100px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .subscribe-row .parent-max-width {
+        max-width: 900px;
+    }
+
+    .subscribe-sub-row {
+        padding: 20px 60px;
+    }
+
+    .footer-desc-row .parent-max-width {
+        max-width: 850px;
+    }
+
+    .alert-container .parent-max-width {
+        max-width: 900px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .subscribe-row .parent-max-width {
+        max-width: 700px;
+    }
+
+    .subscribe-sub-row {
+        padding: 15px 20px;
+    }
+
+    .footer-desc-row .parent-max-width {
+        max-width: 650px;
+    }
+
+    .alert-container .parent-max-width {
+        max-width: 700px;
+        padding: 0px 20px;
+        /* padding-top: 10px; */
+    }
+
+    .default-header {
+        display: none;
+    }
+
+    .responsive-headers .mobile-header {
+        display: block;
+    }
+
+    .resp-header-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+    }
+
+    .nav-item-main {
+        display: none;
+    }
+
+    .resp-row-3 {
+        display: flex;
+        gap: 20px;
+    }
+
+    .dropdown {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .alert-container .flex-cont{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer-main-cont {
+        background-color: #363434;
+        padding: 0px
+    }
+
+    .subscribe-row {
+        margin-top: 0px
+    }
+
+    .subscribe-row .parent-max-width {
+        width: 100%;
+        gap: 0px;
+    }
+
+    .subscribe-sub-row {
+        padding: 20px 20px;
+    }
+
+    .subscribe-sub-row .flex-cont {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .subscribe-col-1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    .subscribe-col-2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-around !important;
+        flex-direction: column;
+        width: 100%;
+        gap: 10px
+    }
+
+    .email-input {
+        width: 100%;
+    }
+
+    .footer-desc-row {
+        height: auto;
+        padding: 30px 20px;
+    }
+
+    .footer-grid-row {
+        display: grid;
+        grid-template-columns: 12fr;
+        grid-gap: 20px;
+        z-index: 1;
+    }
+
+    .footer-grid-col1 {
+        grid-column: span 12;
+        max-width: 450px
+    }
+
+    .footer-grid-col2 {
+        grid-column: span 12;
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+        flex-wrap: wrap;
+    }
+
+    .footer-icon-cont {
+        display: none;
+    }
+
+    .mobile-icon {
+        display: flex;
+        margin-top: 20px;
+    }
+
+    .footer-icon-mob-cont {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 10px;
+        /* width: 100%; */
+    }
 }

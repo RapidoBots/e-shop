@@ -98,6 +98,7 @@ body {
     margin: 0px;
     padding: 0px
 }
+
 #shipping-head {
     margin-bottom: 20px;
 }
@@ -147,4 +148,60 @@ body {
 
 .checkout-button:hover {
     background-color: #0e6bbf;
+}
+
+@media screen and (max-width: 1300px) {
+    #cart-main-cont .parent-max-width {
+        max-width: 1100px;
+    }
+
+}
+
+@media screen and (max-width: 1100px) {
+    #cart-main-cont .parent-max-width {
+        max-width: 900px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #cart-main-cont .parent-max-width {
+        max-width: 700px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #cart-main-cont .parent-max-width {
+        max-width: 100%;
+    }
+
+    .cart-row {
+        flex-wrap: wrap;
+        padding: 0px 20px;
+    }
+
+    .cart-column-1 {
+        flex-basis: 100%;
+        overflow-x: auto;
+    }
+
+    .cart-column-2 {
+        flex-basis: 100%;
+        align-self: stretch;
+        background: #eeeeee 0% 0% no-repeat padding-box;
+    }
+
+    .table-container {
+        overflow-x: auto;
+        overflow-y: hidden;
+        min-width: 300px;
+        white-space: nowrap;
+    }
+
+    .desc-head-1,
+    .desc-head-2 {
+        flex: 1;
+    }
+    .desc-column1-img img{
+        width: 200px !important;
+    }
 }
