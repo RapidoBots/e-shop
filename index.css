@@ -70,7 +70,8 @@ body {
 }
 
 .choose-sub-cont {
-    background-color: #0766b4
+    background-color: #0766b4;
+    padding: 30px 0px;
 }
 
 .choose-text {
@@ -152,7 +153,6 @@ body {
 
 .triangle {
     position: absolute;
-    /* Position triangle absolutely */
     top: 0;
     left: 50;
     width: 0;
@@ -165,9 +165,6 @@ body {
 .triangle-content {
     position: relative;
     z-index: 1;
-    /* display: flex;
-    justify-content: space-around;
-    align-items: center; */
 }
 
 .triangle-content>div>div {
@@ -186,12 +183,12 @@ body {
 .tabs {
     display: flex;
     align-items: center;
+    gap: 20px;
 }
 
 .tab {
     cursor: pointer;
     padding: 10px 20px;
-    margin-right: 20px;
     transition: all 0.011s ease;
     font-size: 20px;
 }
@@ -223,7 +220,8 @@ body {
 
 .feature-card {
     border-radius: 0px !important;
-    padding: 30px 10px !important
+    padding: 30px 10px !important;
+    width: 100%;
 }
 
 .feature-card-head {
@@ -318,4 +316,134 @@ body {
     margin: 0 5rem;
     overflow: hidden;
     /* border-radius: 25px; */
+}
+.categories-main-head img {
+    width: 100%;
+    height: auto;
+}
+.shop-brand-cont img{
+    width: 100%;
+    height: auto;
+}
+
+.flex-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.choose-sub-cont .parent-max-width .flex-cont p{
+    margin-bottom: 0rem;
+    /* margin-top: 0px; */
+}
+
+@media screen and (max-width: 768px) {
+    .categories-cont{
+        padding: 0px 20px;
+    }
+    .categories-card-cont {
+        gap: 40px;
+        margin-bottom: 20px;
+    }
+    .choose-us{
+        margin: 50px 0px;
+    }
+    .choose-us .choose-head{
+        font-size: 30px;
+    }
+    .choose-sub-cont{
+        padding: 10px 0px;
+    }
+    .choose-sub-cont .flex-cont{
+        flex-direction: column;
+    }
+    .choose-sub-cont .flex-cont p{
+        width: 100%;
+        text-align: center;
+    }
+    .choose-sub-cont .parent-max-width{
+        padding: 0px 20px;
+    }
+    .choose-text {
+        font-size: 20px;
+    }
+    .parent-max-width2{
+        padding: 0px 20px;
+    }
+    .parent-max-width2 .flex-cont{
+        flex-direction: column;
+    }
+    .feature-cont {
+        padding: 50px 20px
+    }
+    .feature-card {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .row-1, .row-2 {
+        border-radius:0px;
+    }
+    .sale-banner{
+        margin-bottom: 100px;
+    }
+    .today-product{
+        margin-top: 100px;
+    }
+    .categories-main-head {
+        margin-bottom: 30px;
+    }
+    .shop-brand-cont img{
+        width: 100%;
+        height: auto;
+    }
+    .about-us-cont {
+        padding: 0px 20px;
+    }
+    .today-product h1{
+        margin-top: 50px;
+    }
+    .banner-cont {
+        margin-bottom: 50px
+    }
+    .triangle {
+        position: absolute;
+        top: 0;
+        left: 50;
+        width: 0;
+        height: 0;
+        border-left: 150px solid transparent;
+        border-right: 150px solid transparent;
+        border-top: 300px solid #1388E542;
+    }
+    .choose-sub-cont .parent-max-width .flex-cont p{
+        margin-bottom: 0rem;
+        margin-top: 0px;
+    }
+    .triangle-content .flex-cont{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .key-cont{
+        width: 100%;
+    }
+    .feature-content-cont {
+        width: 100%;
+    }
+    .tabs {
+        gap: 10px;
+    }
+    .tab {
+        padding: 10px;
+        font-size: 16px;
+    }
+    .categories-main-head {
+        font-weight: 700;
+    }
+    .feature-main-head {
+        font-size: 25px
+    }
+    .about-head {
+        font-size: 30px;
+    }    
 }
