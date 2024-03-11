@@ -473,12 +473,12 @@
     display: block;
 }
 
-.dropdown-item {
+.dropdown-items {
     padding: 5px 15px;
     cursor: pointer;
 }
 
-.dropdown-left .selected {
+#dropdown-left .selected {
     background-color: #1388E542;
 }
 
