@@ -72,9 +72,15 @@
                 <button class="search-button">Search</button>
               </div>
               <div id="header-grid-column-3">
-                <img src="./Assets/images/heart.png" class="icons" alt="" />
-                <img src="./Assets/images/cart.png" class="icons" alt="" />
-                <img src="./Assets/images/user.png" class="icons" alt="" />
+                <a href="">
+                  <img src="./Assets/images/heart.png" class="icons" alt="" />
+                </a>
+                <a href=""
+                  ><img src="./Assets/images/cart.png" class="icons" alt=""
+                /></a>
+                <a href=""
+                  ><img src="./Assets/images/user.png" class="icons" alt=""
+                /></a>
               </div>
             </div>
             <hr class="solid header-line" />
@@ -126,7 +132,7 @@
               <div class="offcanvas-body">
                 <div class="mt-3">
                   <div class="dropdown">
-                    <p onclick="myFunction()">Categories</p>
+                    <p onclick="myFunction(event)">Categories</p>
                     <i class="fas fa-plus"></i>
                   </div>
                   <p>Popular Categories</p>
@@ -154,7 +160,7 @@
         <div class="nav-item-main">
           <div class="flex-cont nav-item-sub" id="nav-item-container">
             <div class="dropdown">
-              <p class="nav-item" onclick="myFunction()">
+              <p class="nav-item" onclick="myFunction(event)">
                 Categories
                 <i class="fas fa-angle-down"></i>
               </p>
@@ -333,7 +339,10 @@
                 <div class="filter-item-cont">
                   <div class="filter-item-col">
                     <p>View:</p>
-                    <i class="fas fa-bars" style="font-size: 20px; cursor: pointer;"></i>
+                    <i
+                      class="fas fa-bars"
+                      style="font-size: 20px; cursor: pointer"
+                    ></i>
                     <div class="grid-icon">
                       <div class="row-grid">
                         <i class="fas fa-square"></i>
@@ -459,12 +468,8 @@
                           <p class="product-desc-text">$199.00</p>
                         </div>
                         <div class="product-card-btn-cont">
-                          <button class="product-card-btn">
-                            ADD TO CART
-                          </button>
-                          <button class="product-card-btn">
-                            WISHLIST
-                          </button>
+                          <button class="product-card-btn">ADD TO CART</button>
+                          <button class="product-card-btn">WISHLIST</button>
                         </div>
                       </div>
                     </div>
@@ -483,12 +488,8 @@
                           <p class="product-desc-text">$199.00</p>
                         </div>
                         <div class="product-card-btn-cont">
-                          <button class="product-card-btn">
-                            ADD TO CART
-                          </button>
-                          <button class="product-card-btn">
-                            WISHLIST
-                          </button>
+                          <button class="product-card-btn">ADD TO CART</button>
+                          <button class="product-card-btn">WISHLIST</button>
                         </div>
                       </div>
                     </div>
@@ -507,12 +508,8 @@
                           <p class="product-desc-text">$199.00</p>
                         </div>
                         <div class="product-card-btn-cont">
-                          <button class="product-card-btn">
-                            ADD TO CART
-                          </button>
-                          <button class="product-card-btn">
-                            WISHLIST
-                          </button>
+                          <button class="product-card-btn">ADD TO CART</button>
+                          <button class="product-card-btn">WISHLIST</button>
                         </div>
                       </div>
                     </div>
@@ -531,12 +528,8 @@
                           <p class="product-desc-text">$199.00</p>
                         </div>
                         <div class="product-card-btn-cont">
-                          <button class="product-card-btn">
-                            ADD TO CART
-                          </button>
-                          <button class="product-card-btn">
-                            WISHLIST
-                          </button>
+                          <button class="product-card-btn">ADD TO CART</button>
+                          <button class="product-card-btn">WISHLIST</button>
                         </div>
                       </div>
                     </div>
@@ -658,32 +651,28 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      let slideIndex = 1;
-      showSlides(slideIndex);
-      function plusSlides(n) {
-        showSlides((slideIndex += n));
+      // Function to toggle the dropdown
+      function myFunction(event) {
+        document.getElementById("myDropdown").classList.toggle("show");
+        event.stopPropagation(); // Prevent event bubbling to the document
       }
-      function currentSlide(n) {
-        showSlides((slideIndex = n));
-      }
-      function showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {
-          slideIndex = 1;
+
+      // Close the dropdown when clicking outside of it
+      document.addEventListener("click", function (event) {
+        const dropdown = document.getElementById("myDropdown");
+        if (!event.target.closest(".dropdown")) {
+          if (dropdown.classList.contains("show")) {
+            dropdown.classList.remove("show");
+          }
         }
-        if (n < 1) {
-          slideIndex = slides.length;
-        }
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
+      });
+
+      function handleDropdownItem(index) {
+        const dropdownItems = document.querySelectorAll(".dropdown-item");
+        dropdownItems.forEach((item) => {
+          item.classList.remove("selected");
+        });
+        dropdownItems[index].classList.add("selected");
       }
     </script>
   </body>
