@@ -79,6 +79,10 @@
     gap: 40px;
     position: relative;
 }
+.nav-item-sub a {
+    text-decoration: none;
+    color: inherit;
+}
 
 #dropdown-left {
     flex-basis: 45%;
@@ -107,11 +111,14 @@
     gap: 50px
 }
 
+.dropdown-right-single-item p {
+    margin-bottom: 0rem;
+}
+
 .search-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* margin-bottom: 20px; */
 }
 
 .search-input {
@@ -120,7 +127,6 @@
     width: 100%;
     margin-right: 10px;
     background-image: url('/Assets/images/search.png');
-    /* Add search icon */
     background-repeat: no-repeat;
     background-position: left 10px center;
     background-size: 15px;
@@ -173,7 +179,7 @@
 .subscribe-col-1 {
     display: flex;
     align-items: center;
-    gap: 30px
+    gap: 30px;
 }
 
 .subscribe-col-2 {
@@ -224,7 +230,6 @@
     border-width: 2px;
     border-style: solid;
 }
-
 
 .icons {
     height: 20px;
@@ -293,11 +298,12 @@
 .btn-container {
     text-align: center;
     padding-bottom: 20px;
-    z-index: 200
+    z-index: 200;
+    width: 100%;
 }
 
 .btn-default {
-    padding: 12px 30px;
+    padding: 10px;
     background-color: #007bff;
     color: #fff;
     border: none;
@@ -306,7 +312,16 @@
     transition: background-color 0.3s ease;
     z-index: 200;
     font-family: Lato;
-    font-weight: 700;
+    font-weight: 600;
+    width: 100%;
+}
+.swiper-slider-card .feature-btn-cont .btn-default {
+    /* padding: 0px; */
+    width: 100%;
+}
+.categories-card-cont .btn-default {
+    width: auto;
+    padding: 10px 15px;
 }
 
 .btn:hover {
@@ -433,7 +448,6 @@
 .nav-item {
     background-color: #fbfcff;
     padding: 10px 20px;
-    /* color: #fff; */
     border-radius: 50px;
     transition: background-color 0.3s ease;
     font-weight: 500;

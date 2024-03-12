@@ -250,10 +250,14 @@
                 </div>
               </div>
             </div>
-            <p class="nav-item">Popular Categories</p>
-            <p class="nav-item">Featured Products</p>
-            <p class="nav-item">Sales</p>
-            <p class="nav-item">New Products</p>
+            <a href="#popular-categories"
+              ><p class="nav-item">Popular Categories</p></a
+            >
+            <a href="#feature-product"
+              ><p class="nav-item">Featured Products</p></a
+            >
+            <a href="#discounted-sale"><p class="nav-item">Sales</p></a>
+            <a href="#new-product"><p class="nav-item">New Products</p></a>
           </div>
         </div>
       </div>
@@ -330,7 +334,7 @@
         </div>
       </div>
       <!-- Categories -->
-      <div class="categories-cont">
+      <div class="categories-cont" id="popular-categories">
         <h1 class="categories-main-head">
           POPULAR <span style="color: black">CATEGORIES</span>
         </h1>
@@ -428,7 +432,7 @@
         </div>
       </div>
       <!-- Featured Products -->
-      <div class="feature-cont">
+      <div class="feature-cont" id="feature-product">
         <div class="parent-max-width2">
           <div class="flex-cont">
             <div>
@@ -823,7 +827,7 @@
         </div>
       </div>
       <!-- Discounted sales -->
-      <div class="parent-max-width2 sale-banner">
+      <div class="parent-max-width2 sale-banner" id="discounted-sale">
         <h1 class="categories-main-head">
           DISCOUNTED <span style="color: black">SALES</span>
         </h1>
@@ -852,7 +856,7 @@
         </div>
       </div>
       <!-- PRODUCTS IN TODAY -->
-      <div class="parent-max-width today-product">
+      <div class="parent-max-width today-product" id="new-product">
         <h1 class="categories-main-head">
           PRODUCTS <span style="color: black">IN TODAY</span>
         </h1>
@@ -1201,7 +1205,7 @@
             slidesPerView: 2,
           },
           950: {
-            slidesPerView: 5,
+            slidesPerView: 4,
           },
         },
       });

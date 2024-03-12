@@ -41,6 +41,7 @@ body {
     color: #1388e5;
     text-align: center;
     font-weight: 900;
+    margin-bottom: 50px;
 }
 
 .categories-card-cont {
@@ -88,6 +89,11 @@ body {
 
 .feature-cont {
     padding: 50px 0px
+}
+
+.feature-cont .parent-max-width2 {
+    padding: 50px 0px;
+    margin-bottom: 0px;
 }
 
 .feature-main-head {
@@ -251,7 +257,8 @@ body {
 
 .feature-btn-cont {
     display: flex;
-    gap: 10px
+    gap: 10px;
+    width: 100%;
 }
 
 .feature-btn-cont button {
@@ -268,10 +275,19 @@ body {
     padding: 30px 10px;
     background: #ffffff 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000029;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+
+    width: 100%;
+}
+.swiper-slider-card img{
+
+    width: 100%;
+}
+
+.swiper-slider-card .feature-btn-cont {
+    width: 100%;
+}
+.swiper-slider-card .feature-btn-cont .btn-default {
+    width: 100%;
 }
 
 .swiper-slider-card button {
@@ -338,6 +354,10 @@ body {
     /* margin-top: 0px; */
 }
 
+.today-product h1 {
+    margin-top: 50px;
+}
+
 @media screen and (max-width: 1300px) {
     /* .feature-btn-cont button {
         padding: 2px 5px !important;
@@ -349,6 +369,7 @@ body {
         font-weight: 500;
     } */
 }
+
 @media screen and (max-width: 768px) {
     .categories-cont {
         padding: 0px 20px;
