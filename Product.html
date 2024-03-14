@@ -168,33 +168,33 @@
                 <div style="display: flex">
                   <div id="dropdown-left">
                     <div
-                      class="dropdown-item selected"
+                      class="dropdown-items selected"
                       onclick="handleDropdownItem(0)"
                     >
                       <p>Apparels</p>
                     </div>
-                    <div class="dropdown-item" onclick="handleDropdownItem(1)">
+                    <div class="dropdown-items" onclick="handleDropdownItem(1)">
                       <p>Style & Fashion</p>
                     </div>
-                    <div class="dropdown-item" onclick="handleDropdownItem(2)">
+                    <div class="dropdown-items" onclick="handleDropdownItem(2)">
                       <p>Home & Garden</p>
                     </div>
-                    <div class="dropdown-item" onclick="handleDropdownItem(3)">
+                    <div class="dropdown-items" onclick="handleDropdownItem(3)">
                       <p>Sporting Goods</p>
                     </div>
-                    <div class="dropdown-item" onclick="handleDropdownItem(4)">
+                    <div class="dropdown-items" onclick="handleDropdownItem(4)">
                       <p>Health & Wellness</p>
                     </div>
-                    <div class="dropdown-item" onclick="handleDropdownItem(5)">
+                    <div class="dropdown-items" onclick="handleDropdownItem(5)">
                       <p>Toys & Games</p>
                     </div>
-                    <div class="dropdown-item" onclick="handleDropdownItem(6)">
+                    <div class="dropdown-items" onclick="handleDropdownItem(6)">
                       <p>Pets & Pet Supplies</p>
                     </div>
-                    <div class="dropdown-item" onclick="handleDropdownItem(7)">
+                    <div class="dropdown-items" onclick="handleDropdownItem(7)">
                       <p>Camera & Mobile Accessories</p>
                     </div>
-                    <div class="dropdown-item" onclick="handleDropdownItem(8)">
+                    <div class="dropdown-items" onclick="handleDropdownItem(8)">
                       <p>Home Appliances</p>
                     </div>
                   </div>
@@ -247,10 +247,14 @@
                 </div>
               </div>
             </div>
-            <p class="nav-item">Popular Categories</p>
-            <p class="nav-item">Featured Products</p>
-            <p class="nav-item">Sales</p>
-            <p class="nav-item">New Products</p>
+            <a href="#popular-categories"
+              ><p class="nav-item">Popular Categories</p></a
+            >
+            <a href="#feature-product"
+              ><p class="nav-item">Featured Products</p></a
+            >
+            <a href="#discounted-sale"><p class="nav-item">Sales</p></a>
+            <a href="#new-product"><p class="nav-item">New Products</p></a>
           </div>
         </div>
       </div>
@@ -738,7 +742,8 @@
       });
 
       function handleDropdownItem(index) {
-        const dropdownItems = document.querySelectorAll(".dropdown-item");
+        const dropdownItems = document.querySelectorAll(".dropdown-items");
+        console.log(dropdownItems, "dropdownItems");
         dropdownItems.forEach((item) => {
           item.classList.remove("selected");
         });
