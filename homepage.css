@@ -200,6 +200,20 @@
     padding: 0px 5px;
 }
 
+.carousel-text {
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    /* transform: translate(-50%, -50%); */
+    color: red;
+}
+
+.carousel-text p {
+    font-size: 85px;
+    font-style: italic;
+    font-weight: 600;
+}
+
 @media screen and (max-width: 1300px) {
     .gap .parent-max-width {
         max-width: 1150px;
